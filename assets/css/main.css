@@ -824,4 +824,34 @@ a:hover {
         font-size: 18pt;
         margin-bottom: 1rem;
     }
+}
+
+/* Visitor Counter */
+.visitor-counter {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--bg-section);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(247, 147, 26, 0.1);
+    text-align: center;
+}
+
+.visitor-counter p {
+    margin: 0.5rem 0;
+    color: var(--text-light);
+}
+
+.visitor-counter strong {
+    color: var(--text-color);
+}
+
+#visitor-count, #page-views {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: var(--font-mono);
+}
+
+.visitor-counter small {
+    font-size: 0.875rem;
+    opacity: 0.8;
 } 
