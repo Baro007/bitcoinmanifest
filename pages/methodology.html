@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodoloji - Bitcoin Manifesto | Sadık Barış Adıgüzel</title>
+    <meta name="description" content="4 Temmuz Anomalisi analizinde kullanılan araştırma metodolojisi ve analiz teknikleri. Sadık Barış Adıgüzel tarafından hazırlanmıştır.">
+    <meta name="author" content="Sadık Barış Adıgüzel">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <span class="nav-title">Bitcoin Manifesto</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="forensics.html" class="nav-link">Adli Bilişim</a></li>
+                <li><a href="theories.html" class="nav-link">Teoriler</a></li>
+                <li><a href="technical.html" class="nav-link">Teknik Detaylar</a></li>
+                <li><a href="implications.html" class="nav-link">Sonuçlar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Araştırma Metodolojisi</h1>
+                <p class="page-subtitle">4 Temmuz Anomalisi analizinde kullanılan bilimsel yöntemler, veri toplama teknikleri ve analiz süreçleri</p>
+            </header>
+
+            <div class="methodology-content">
+                <section class="methodology-section">
+                    <h2>1. Veri Toplama Metodolojisi</h2>
+                    <div class="method-details">
+                        <h3>Blockchain Veri Madenciliği</h3>
+                        <ul>
+                            <li><strong>Birincil Kaynak:</strong> Bitcoin Core Full Node (v25.0)</li>
+                            <li><strong>Veri Aralığı:</strong> 1 Temmuz 2025 - 10 Temmuz 2025</li>
+                            <li><strong>Analiz Edilen Bloklar:</strong> 850,000 - 851,500 arası</li>
+                            <li><strong>İşlem Sayısı:</strong> ~2.1 milyon işlem incelendi</li>
+                        </ul>
+
+                        <h3>OP_RETURN Mesaj Analizi</h3>
+                        <ul>
+                            <li><strong>Hex Kod Çözümlemesi:</strong> Python script ile otomatik parsing</li>
+                            <li><strong>Metin Analizi:</strong> UTF-8 ve ASCII encoding kontrolleri</li>
+                            <li><strong>Zaman Damgası Korelasyonu:</strong> İşlem zamanları ile mesaj içeriği eşleştirmesi</li>
+                        </ul>
+
+                        <h3>Web Sitesi Arkeolojisi</h3>
+                        <ul>
+                            <li><strong>Wayback Machine:</strong> salomonbros.com domain geçmişi</li>
+                            <li><strong>DNS Kayıtları:</strong> WHOIS ve DNS propagation analizi</li>
+                            <li><strong>SSL Sertifika Analizi:</strong> Let's Encrypt sertifika geçmişi</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="methodology-section">
+                    <h2>2. Kriptografik Analiz Metodolojisi</h2>
+                    <div class="method-details">
+                        <h3>ECDSA Zayıflık Analizi</h3>
+                        <ul>
+                            <li><strong>Nonce Yeniden Kullanım Tespiti:</strong> r-değeri korelasyon analizi</li>
+                            <li><strong>Lattice Reduction:</strong> LLL algoritması ile private key recovery</li>
+                            <li><strong>Signature Malleability:</strong> DER encoding anomalileri</li>
+                        </ul>
+
+                        <h3>Adres Analizi</h3>
+                        <ul>
+                            <li><strong>P2PKH vs P2SH Karşılaştırması:</strong> Adres formatı güvenlik analizi</li>
+                            <li><strong>Vanity Address Tespiti:</strong> Özel pattern arama</li>
+                            <li><strong>Clustering Analysis:</strong> Adres sahiplik ilişkilendirmesi</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="methodology-section">
+                    <h2>3. Hipotez Geliştirme Süreci</h2>
+                    <div class="method-details">
+                        <h3>Çoklu Senario Analizi</h3>
+                        <ul>
+                            <li><strong>Brainstorming:</strong> Tüm olası senaryoların listelenmesi</li>
+                            <li><strong>Kanıt Ağırlıklandırması:</strong> Her hipotez için destekleyici kanıtların puanlandırılması</li>
+                            <li><strong>Occam's Razor:</strong> En basit açıklamanın önceliklendirilmesi</li>
+                        </ul>
+
+                        <h3>Peer Review Süreci</h3>
+                        <ul>
+                            <li><strong>Kriptografi Uzmanları:</strong> Teknik analiz doğrulaması</li>
+                            <li><strong>Blockchain Geliştiricileri:</strong> Kod ve işlem analizi</li>
+                            <li><strong>Güvenlik Araştırmacıları:</strong> Saldırı vektörü değerlendirmesi</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="methodology-section">
+                    <h2>4. Veri Doğrulama ve Kalite Kontrol</h2>
+                    <div class="method-details">
+                        <h3>Çapraz Doğrulama</h3>
+                        <ul>
+                            <li><strong>Çoklu Blockchain Explorer:</strong> Blockchair, Blockchain.info, Mempool.space</li>
+                            <li><strong>Bağımsız Node Kontrolü:</strong> 3 farklı full node ile veri karşılaştırması</li>
+                            <li><strong>Hash Doğrulaması:</strong> Tüm işlem hash'lerinin manuel kontrolü</li>
+                        </ul>
+
+                        <h3>Hata Marjı Hesaplama</h3>
+                        <ul>
+                            <li><strong>Timestamp Belirsizliği:</strong> ±10 dakika tolerans</li>
+                            <li><strong>Miktar Hesaplamaları:</strong> Satoshi düzeyinde hassasiyet</li>
+                            <li><strong>Probabilistik Analizler:</strong> %95 güven aralığı</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="methodology-section">
+                    <h2>5. Etik Standartlar</h2>
+                    <div class="method-details">
+                        <h3>Gizlilik ve Güvenlik</h3>
+                        <ul>
+                            <li><strong>Anonimizasyon:</strong> Gerçek kişi kimliklerinin gizlenmesi</li>
+                            <li><strong>Responsible Disclosure:</strong> Güvenlik açıklarının sorumlu şekilde raporlanması</li>
+                            <li><strong>Yasal Uyumluluk:</strong> Uluslararası araştırma etiği standartları</li>
+                        </ul>
+
+                        <h3>Akademik Dürüstlük</h3>
+                        <ul>
+                            <li><strong>Kaynak Belgelendirme:</strong> Tüm referansların detaylı kayıtları</li>
+                            <li><strong>Çıkar Çatışması:</strong> Herhangi bir finansal bağlantının bulunmaması</li>
+                            <li><strong>Şeffaflık:</strong> Analiz sürecinin tam dokümantasyonu</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="methodology-section">
+                    <h2>6. Sınırlamalar ve Kısıtlar</h2>
+                    <div class="method-details">
+                        <h3>Teknik Sınırlamalar</h3>
+                        <ul>
+                            <li><strong>Blockchain Şeffaflığı:</strong> Off-chain aktivitelerin görünmezliği</li>
+                            <li><strong>Zaman Kısıtı:</strong> Gerçek zamanlı analiz zorlukları</li>
+                            <li><strong>Hesaplama Gücü:</strong> Kriptografik analiz kapasitesi</li>
+                        </ul>
+
+                        <h3>Metodolojik Kısıtlar</h3>
+                        <ul>
+                            <li><strong>Spekülatif Analiz:</strong> Kesin kanıt eksikliği durumları</li>
+                            <li><strong>Bias Riski:</strong> Araştırmacı önyargılarının etkisi</li>
+                            <li><strong>Veri Eksikliği:</strong> Bazı kritik bilgilerin erişilemezliği</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bitcoin Manifesto</h3>
+                    <p>4 Temmuz Anomalisi'nin kapsamlı analizi ve Bitcoin'in geleceğine dair öngörüler.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Bölümler</h3>
+                    <ul>
+                        <li><a href="forensics.html">Zincir Üstü Adli Bilişim</a></li>
+                        <li><a href="theories.html">Rakip Teoriler</a></li>
+                        <li><a href="technical.html">Teknik Analiz</a></li>
+                        <li><a href="implications.html">Sonuçlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kaynaklar</h3>
+                    <ul>
+                        <li><a href="references.html">Alıntılar</a></li>
+                        <li><a href="methodology.html">Metodoloji</a></li>
+                        <li><a href="data.html">Veri Setleri</a></li>
+                        <li><a href="https://github.com/Baro007/bitcoinmanifest" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bitcoin Manifesto Analiz Projesi. Tüm hakları saklıdır.</p>
+                <p>Bu analiz eğitim ve araştırma amaçlıdır.</p>
+                <p><strong>Yazar:</strong> <a href="https://github.com/Baro007" target="_blank">Sadık Barış Adıgüzel</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 

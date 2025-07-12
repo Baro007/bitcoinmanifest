@@ -1,11 +1,13 @@
 # 🚀 Bitcoin Manifesto: 4 Temmuz Anomalisi
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://[username].github.io/bitcoin-manifesto/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://baro007.github.io/bitcoinmanifest/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Bitcoin](https://img.shields.io/badge/Bitcoin-₿-orange)](https://bitcoin.org)
 
 > **80.000 BTC'lik gizemli transferin derinlemesine analizi**  
 > Bitcoin tarihinin en büyük kriptografik soygununu keşfedin.
+
+**👨‍💻 Yazar:** [Sadık Barış Adıgüzel](https://github.com/Baro007)
 
 ## 📋 İçindekiler
 
@@ -187,9 +189,9 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 🔗 Bağlantılar
 
-- **🌐 Live Site**: [https://[username].github.io/bitcoin-manifesto/](https://[username].github.io/bitcoin-manifesto/)
-- **📧 İletişim**: [email@example.com](mailto:email@example.com)
-- **🐦 Twitter**: [@bitcoin_manifesto](https://twitter.com/bitcoin_manifesto)
+- **🌐 Live Site**: [https://baro007.github.io/bitcoinmanifest/](https://baro007.github.io/bitcoinmanifest/)
+- **👨‍💻 Yazar**: [Sadık Barış Adıgüzel](https://github.com/Baro007)
+- **📧 GitHub**: [bitcoinmanifest](https://github.com/Baro007/bitcoinmanifest)
 
 ## ⚠️ Yasal Uyarı
 
