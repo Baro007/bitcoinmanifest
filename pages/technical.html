@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknik Analiz | 4 Temmuz Anomalisi</title>
+    <meta name="description" content="ECDSA zayıflıkları, lattice saldırıları ve Bitcoin kriptografik analizinin derinlemesine incelemesi.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../assets/images/bitcoin-logo.svg" alt="Bitcoin" class="nav-logo">
+                    <span class="nav-title">Bitcoin Manifesto</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="forensics.html" class="nav-link">Adli Bilişim</a></li>
+                <li><a href="theories.html" class="nav-link">Teoriler</a></li>
+                <li><a href="technical.html" class="nav-link active">Teknik</a></li>
+                <li><a href="implications.html" class="nav-link">Sonuçlar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Ana Sayfa</a>
+                <span>/</span>
+                <span>Teknik Analiz</span>
+            </div>
+            <h1 class="page-title">Bölüm III: Makinedeki Hayalet</h1>
+            <p class="page-subtitle">Sömürüye Teknik Bir Derin Dalış</p>
+            <div class="page-meta">
+                <span class="meta-item">⚙️ Kriptografik Analiz</span>
+                <span class="meta-item">🔬 ECDSA & Lattice</span>
+                <span class="meta-item">⏱️ 25 dakika okuma</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <aside class="table-of-contents">
+                    <h3>Teknik Konular</h3>
+                    <ul>
+                        <li><a href="#introduction">Giriş</a></li>
+                        <li><a href="#bitcoin-crypto">Bitcoin'in Kriptografik Soyağacı</a></li>
+                        <li><a href="#ecdsa-vulnerability">ECDSA'nın Aşil Topuğu</a></li>
+                        <li><a href="#lattice-attack">Örgü Saldırısı Sanatı</a></li>
+                        <li><a href="#case-study">Vaka Çalışması</a></li>
+                    </ul>
+                </aside>
+
+                <article class="article-content">
+                    <section id="introduction" class="content-section">
+                        <h2>Giriş</h2>
+                        <p class="lead">14 yıldır dokunulmamış cüzdanlardan 80.000 BTC'nin nasıl taşınabildiğini anlamak için, en güvenilir hipotezin teknik temellerini analiz etmek esastır: erken Bitcoin cüzdanlarındaki zayıflıkları hedef alan bir kriptografik sömürü.</p>
+                        
+                        <div class="highlight-box">
+                            <h3>🔬 Teknik Analiz Kapsamı</h3>
+                            <p>Bu bölüm, eski adres formatlarındaki güvenlik açıklarının ve bunları tehlikeye atmak için kullanılan sofistike saldırı yöntemlerinin, kriptografi uzmanı olmayan birine erişilebilir bir şekilde sunulan ayrıntılı bir analizini sunar.</p>
+                        </div>
+                    </section>
+
+                    <section id="bitcoin-crypto" class="content-section">
+                        <h2>3.1 Bitcoin'in Kriptografik Soyağacı: P2PKH'nin Solan Şanı</h2>
+                        
+                        <p>4 Temmuz olayında hedeflenen cüzdanların tümü, Bitcoin'deki en eski ve orijinal adres formatı olan Pay-to-PubKey-Hash (P2PKH) türündeydi. Bu eski format ile modern standartlar arasındaki farkları anlamak, bu belirli cüzdanların neden savunmasız olduğunu kavramak için çok önemlidir.</p>
+
+                        <div class="comparison-table">
+                            <h3>Bitcoin Adres Formatları Karşılaştırması</h3>
+                            <table class="transaction-table">
+                                <thead>
+                                    <tr>
+                                        <th>Özellik</th>
+                                        <th>P2PKH (Eski)</th>
+                                        <th>SegWit (P2WPKH)</th>
+                                        <th>Taproot (P2TR)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Adres Öneki</strong></td>
+                                        <td>1...</td>
+                                        <td>bc1q...</td>
+                                        <td>bc1p...</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>İmza Algoritması</strong></td>
+                                        <td>ECDSA</td>
+                                        <td>ECDSA</td>
+                                        <td>Schnorr İmzaları</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Genel Anahtar Açığa Çıkması</strong></td>
+                                        <td>İlk harcamada ortaya çıkar</td>
+                                        <td>İlk harcamada ortaya çıkar</td>
+                                        <td>Asla ortaya çıkmayacak şekilde yapılandırılabilir</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Birincil Güvenlik Açığı</strong></td>
+                                        <td>Erken cüzdan yazılımında zayıf RNG</td>
+                                        <td>İşlem Esnekliği (düzeltildi)</td>
+                                        <td>Teorik saldırılar; sağlam tasarım</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Kuantum Direnci</strong></td>
+                                        <td>Düşük</td>
+                                        <td>Düşük</td>
+                                        <td>Yüksek</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section id="ecdsa-vulnerability" class="content-section">
+                        <h2>3.2 ECDSA'nın Aşil Topuğu: Nonce</h2>
+                        
+                        <p>4 Temmuz Anomalisinin kalbindeki kriptografik sömürü, Bitcoin'in işlemleri doğrulamak için kullandığı sistem olan Eliptik Eğri Dijital İmza Algoritmasının (ECDSA) ince ama kritik bir bileşenini hedef almaktadır.</p>
+
+                        <div class="technical-diagram">
+                            <h3>🔑 Kritik Nonce (k)</h3>
+                            <div class="diagram-content">
+                                <p><strong>ECDSA İmza Süreci:</strong></p>
+                                <ul>
+                                    <li>Özel anahtar (d)</li>
+                                    <li>Mesaj karması (h)</li>
+                                    <li>Nonce (k) - Tek kullanımlık rastgele sayı</li>
+                                </ul>
+                                <p class="formula">s = k⁻¹(h + dr) mod n</p>
+                                <p class="warning">⚠️ Aynı nonce'un iki kez kullanılması özel anahtarı ortaya çıkarır!</p>
+                            </div>
+                        </div>
+
+                        <div class="vulnerability-cases">
+                            <h3>Güvenlik Açığı Türleri</h3>
+                            
+                            <div class="case-study-card">
+                                <h4>1. Nonce Yeniden Kullanımı</h4>
+                                <p>Aynı nonce k, aynı özel anahtarla iki farklı mesajı imzalamak için kullanılırsa, özel anahtar basit cebir kullanılarak kurtarılabilir.</p>
+                                <p><strong>Örnek:</strong> 2010 Sony PlayStation 3 saldırısı</p>
+                            </div>
+
+                            <div class="case-study-card">
+                                <h4>2. Taraflı Nonce Güvenlik Açığı</h4>
+                                <p>Nonce k'yi oluşturmak için kullanılan Rastgele Sayı Üreteci (RNG) kusurluysa, öngörülebilir desenler sergileyebilir.</p>
+                                <p><strong>Örnek:</strong> 2013 Android Bitcoin cüzdanları</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="lattice-attack" class="content-section">
+                        <h2>3.3 Örgü Saldırısı Sanatı: Taraflı İmzaları Kırmak</h2>
+                        
+                        <p>Bir özel anahtar, taraflı nonce'larla birden fazla imza oluşturmak için kullanıldığında, örgü saldırısı olarak bilinen güçlü bir kriptanalitik tekniğe karşı savunmasız hale gelir.</p>
+
+                        <div class="attack-process">
+                            <h3>Saldırı Süreci</h3>
+                            
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Gizli Sayı Problemi (HNP)</h4>
+                                    <p>Her taraflı imza, gizli özel anahtar hakkında küçük, kusurlu bir "ipucu" sağlar.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Geometrik Araç Olarak Örgüler</h4>
+                                    <p>Matematiksel ipuçları yüksek boyutlu uzayda vektör kümesi olarak temsil edilir.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>En Kısa Vektörü Bulma</h4>
+                                    <p>Özel anahtar, örgü içindeki en kısa vektöre karşılık gelir.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>LLL/BKZ Algoritmaları</h4>
+                                    <p>Güçlü algoritmalar çok kısa vektörü verimli bir şekilde bulabilir.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="case-study" class="content-section">
+                        <h2>3.4 Vaka Çalışması: "JohnnyTX" / Bulmaca #130 Emsali</h2>
+                        
+                        <p>Böyle bir saldırının fizibilitesi sadece teorik değildir. Temmuz-Eylül 2024 olayları, gereken kaynakların ve tekniklerin çarpıcı bir kamu gösterimini sağladı.</p>
+
+                        <div class="case-timeline">
+                            <h3>2024 Atılımları</h3>
+                            
+                            <div class="breakthrough-card">
+                                <h4>Bulmaca #66 Çözüldü</h4>
+                                <p>66 bit entropi ile yıllardır çözülemeyen bulmaca kırıldı.</p>
+                            </div>
+
+                            <div class="breakthrough-card featured">
+                                <h4>Bulmaca #130 Kırıldı</h4>
+                                <p>130 bitlik anahtarı kırmak için gereken etkili iş, Pollard'ın rho algoritmasını kullanarak 2⁶⁵ işleme indirildi.</p>
+                            </div>
+                        </div>
+
+                        <div class="precedent-significance">
+                            <h3>🎯 Öncül Olarak Önemi</h3>
+                            <p>Bu bulmacaların çözülmesi, 4 Temmuz Anomalisi için kritik bir teknik öncüldü. Zayıf RNG döneminden benzer zayıflıklara sahip gerçek dünya cüzdanlarına karşı planladıkları saldırının artık hesaplama açısından mümkün olduğuna dair açık bir sinyal.</p>
+                        </div>
+                    </section>
+
+                    <div class="insight-box">
+                        <h3>💡 Teknik Sonuç</h3>
+                        <p>Bu faktörlerin birleşimi - kusurlu yazılımla oluşturulmuş eski P2PKH cüzdanları, blok zincirinin halka açık doğası ve örgü saldırısı için gereken hesaplama gücünün demokratikleşmesi - 4 Temmuz Anomalisi için mükemmel bir fırtına yarattı.</p>
+                    </div>
+
+                    <div class="page-navigation">
+                        <a href="theories.html" class="nav-btn nav-prev">
+                            ← Rakip Teoriler
+                        </a>
+                        <a href="implications.html" class="nav-btn nav-next">
+                            Sonuçlar →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bitcoin Manifesto</h3>
+                    <p>4 Temmuz Anomalisi'nin kapsamlı analizi.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Diğer Bölümler</h3>
+                    <ul>
+                        <li><a href="forensics.html">Adli Bilişim</a></li>
+                        <li><a href="theories.html">Rakip Teoriler</a></li>
+                        <li><a href="implications.html">Sonuçlar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 

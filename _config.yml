@@ -1,0 +1,62 @@
+title: "4 Temmuz Anomalisi: Bitcoin'in En Büyük Gizemi"
+description: "80.000 BTC'lik gizemli transferin derinlemesine analizi. Bitcoin tarihinin en büyük kriptografik soygununu keşfedin."
+url: "https://[username].github.io"
+baseurl: "/bitcoin-manifesto"
+author: "Bitcoin Manifesto Analiz Ekibi"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# SEO settings
+lang: tr
+timezone: Europe/Istanbul
+
+# Social media
+twitter:
+  username: bitcoin_manifesto
+  card: summary_large_image
+
+# Google Analytics (kullanıcı kendi tracking ID'sini ekleyebilir)
+google_analytics: 
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:name/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post" 

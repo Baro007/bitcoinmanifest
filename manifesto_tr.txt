@@ -1,0 +1,295 @@
+4 Temmuz Anomalisi: 80.000 BTC'lik Hareketsiz Cüzdan Aktivasyonunun Derinlemesine Analizi
+
+Yönetici Özeti
+
+4 Temmuz 2025'te ve civarında, Bitcoin ağı benzeri görülmemiş bir ölçekte ve karmaşıklıkta bir olaya tanık oldu: 2011'den beri hareketsiz olan sekiz cüzdandan, 8,6 milyar doların üzerinde değere sahip yaklaşık 80.000 BTC'nin koordineli olarak etkinleştirilmesi ve transferi.¹ Bu hareket, Bitcoin tarihindeki türünün en büyüğü olan bu hareket, dijital varlık ekosisteminde anında bir spekülasyon ve analiz fırtınası ateşledi.³ Olay, merkezi ve kritik bir yorum çatışması sunuyor. Bir yanda, özellikle ana akım finans medyasındaki kamusal anlatı, transferleri iyi huylu bir güvenlik yükseltmesi olarak çerçeveledi - varlıklarını savunmasız eski adreslerden modern, güvenli formatlara taşıyan ihtiyatlı bir balina.³ Diğer yanda, zincir üstü kanıtların ve çevresindeki dijital eserlerin daha derin bir analizi, çok daha endişe verici bir sonuca işaret ediyor: cüzdanların, kriptografik sömürü ve ayrıntılı psikolojik savaşın ustaca bir kombinasyonuyla yürütülen düşmanca bir ele geçirilmesi.
+
+Bu rapor, 4 Temmuz Anomalisi'ne ilişkin kapsamlı, çok yönlü bir araştırma sunmaktadır. Doğrulanabilir zincir üstü verileri derleyip inceler, rakip kamusal hipotezleri sentezler, en makul saldırı vektörünün ayrıntılı bir teknik dökümünü sunar ve Bitcoin ağı için derin, uzun vadeli sonuçları analiz eder. Burada sunulan kanıtlar - ana olaydan önce gelen Bitcoin Cash ağındaki düşük maliyetli "kanarya" testinden, doğrudan blok zincirine yerleştirilmiş titizlikle hazırlanmış yasal tehditlere ve şifreli mesajlara, önceki aylarda anahtar kırma yeteneklerinin kamuya açık gösterimine kadar - basit bir sahip tarafından başlatılan transfer teorisine karşı ağır basmaktadır.
+
+Analiz, 4 Temmuz Anomalisinin büyük olasılıkla başarılı, büyük ölçekli bir kriptografik soygun olduğu sonucuna varmaktadır. Bu olay, "kayıp" paraların güvenliği hakkındaki uzun süredir devam eden varsayımları yıkarak ve yeni bir sistemik risk sınıfını ortaya çıkararak dijital varlık ortamı için çok önemli bir anı işaret etmektedir. Uzun süredir teorileştirilen kriptografik saldırıların ölçekli olarak pratik uygulamasını göstermekte, dijital risk, mülkiyet ve güvenlik anlayışında gerekli, rahatsız edici de olsa bir olgunlaşmayı zorlamaktadır. Bu olayın artçı şokları, Bitcoin'in teknik yol haritasına, ekonomik modellerine, yasal statüsüne ve güvenli bir değer deposu olarak anlatısına meydan okuyacak ve merkezi olmayan finansın geleceği için güçlü bir emsal oluşturacaktır. 
+
+Bölüm I: Tartışılamaz Kayıt — Zincir Üstü Adli Bilişim
+
+Bu bölüm, olayın Bitcoin ve Bitcoin Cash blok zincirlerine kaydedildiği şekliyle değişmez, doğrulanabilir gerçeklerini sunmaktadır. Sonraki tüm analizler için ampirik temel görevi görür, net bir zaman çizelgesi oluşturur ve aktör tarafından geride bırakılan dijital eserleri kataloglar. Buradan sonraki her hipotez ve sonuç, bu zincir üstü kanıtlara dayanmaktadır.
+
+1.1 Olayın Anatomisi: Kronolojik Bir Yeniden Yapılanma
+
+Operasyon, tekil, anlık bir eylem değil, iki farklı blok zincirinde hassasiyetle yürütülen metodik, çok aşamalı bir süreçti. Bu zaman çizelgesi, tipik bir kullanıcının ve hatta standart bir kurumsal transferin çok ötesinde bir planlama ve operasyonel güvenlik seviyesini ortaya koymaktadır.
+
+Başlangıç - BCH "Test" İşlemi
+
+İlk açık eylem Bitcoin ağında değil, Bitcoin Cash (BCH) üzerinde gerçekleşti. 4 Temmuz 2025'te, ana BTC transferlerinden yaklaşık 14 saat önce, hedef cüzdanlardan en az birinden BCH blok zincirinde küçük bir işlem gerçekleştirildi.⁴ 2017 Bitcoin/Bitcoin Cash ayrımından önce oluşturulan adresler için özel anahtarlar her iki zincir için de aynıdır. Bu, aktörün, ele geçirilen özel anahtarın işlevsel olduğunu ve bir işlemi başarılı bir şekilde imzalayıp yayınlayabildiğini doğrulamak için düşük maliyetli, düşük görünürlüklü bir "kanarya" testi yapmasına olanak sağladı.
+
+Zincir üstü analize göre, kilit bir test işlemi 02:41:32 UTC'de gerçekleşti ve eski Bitcoin adresi 12tLs9c9RsALt4ockxa1hB4iTCTSmxj2me'nin Bitcoin Cash eşdeğerinden 10.000 BCH taşındı.⁷ Bu adım, operasyonel güvenlik açısından kritik bir parçaydı. BTC zincirini BCH zincirinden çok daha yoğun bir şekilde izleyen daha geniş Bitcoin topluluğunu anında uyarmadan sömürünün başarısını doğruladı. Ana yüksek riskli olaydan önce anahtar erişiminin bu hesaplanmış doğrulaması, paniklemiş bir sahibin değil, profesyonel, önceden tasarlanmış bir operasyonun ayırt edici özelliğidir.⁴
+
+Ana Olay - Koordineli BTC Transferleri
+
+Özel anahtarların aktif olduğu doğrulandıktan sonra, Bitcoin ağındaki ana operasyon başladı. 4 Temmuz 2025'te yaklaşık 03:43:33 UTC'de başlayarak, son derece senkronize bir dizi işlem başladı.⁷ Sonraki saatlerde, sekiz ayrı eski Pay-to-PubKey-Hash (P2PKH) cüzdanından yaklaşık 80.000 BTC sistematik olarak çekildi.¹ Bu cüzdanların her biri, 14 yıldan fazla bir süredir dokunulmamış olup, dikkat çekici bir şekilde yaklaşık 10.000 BTC'lik tek tip bir miktar tutuyordu, bu da ortak bir köken veya sahibi şiddetle düşündürüyor.² Transferler, sekiz özel anahtarın tümünü aynı anda kontrol etmek için otomatik komut dosyaları kullanan tek bir varlığa işaret eden bir hassasiyet ve eşzamanlılıkla gerçekleştirildi.²
+
+Hedef - Bir Güvenlik Yükseltmesi Görüntüsü
+
+En önemlisi, 80.000 BTC, anında satma niyetini belli edecek ve muhtemelen borsa düzeyinde uyarılara neden olacak bilinen kripto para borsalarının para yatırma adreslerine gönderilmedi.⁵ Bunun yerine, fonlar eski, eski P2PKH adreslerinden ('1' ile başlayan) yeni, modern Native SegWit (Bech32) adreslerine ('bc1q' ile başlayan) taşındı.¹
+
+Yüzeysel olarak, bu eylem meşru bir güvenlik yükseltmesini taklit etmektedir. SegWit adreslerine geçiş, gelişmiş güvenlik özellikleri, daha iyi hata denetimi ve gelecekte önemli ölçüde daha düşük işlem ücretleri sağladığı için önerilen bir en iyi uygulamadır.⁹ Bu hedef seçimi, aktöre, olayın sadece orijinal sahip tarafından yapılan gecikmiş bir cüzdan birleştirmesi olduğuna dair makul bir "örtü hikayesi" sağladı.³ Ancak, hedef adreslerden biri daha kışkırtıcı, alaycı bir mesaj ortaya çıkardı: kaynak adres 1f1miYFQWTzdLiCBxtHHnNiW7WAWPUccr'den para almak için küfür içeren bc1qwq5geath93h0lnfsrmnwnfuck2f9ypv4ewyl4j makyaj adresi kullanıldı.⁷ Bu meydan okuma eylemi, gerçek bir güvenlik yükseltmesinin sessiz ihtiyatıyla tam bir tezat oluşturuyor.
+
+1.2 Blok Zincirinin Grafiti: OP_RETURN Mesajlarının Analizi
+
+Operasyonun merkezi bir bileşeni, OP_RETURN işlem kodunun stratejik kullanımıydı. Bu özellik, bir işleme az miktarda rastgele veri yerleştirilmesine olanak tanıyarak blok zincirinde halka açık ve değişmez bir mesaj oluşturur. Aktör bu özelliği, cüzdan sahibini ve daha geniş topluluğu doğrudan hedef alan bir kamu anlatısı oluşturarak psikolojik bir kampanya yürütmek için kullandı.¹ Mesajlar, para transferlerinden önceki günlerde dormant cüzdanlara kasıtlı bir sırayla gönderildi.
+
+Mesaj Sırası ve İçeriği
+
+1.  Talep (1 Temmuz): 1 Temmuz 2025'te gönderilen ilk mesaj, cesur ve agresif bir yasal beyandı: "YASAL UYARI: Bu cüzdanın ve içeriğinin mülkiyetini aldık".² Bu mesaj için örnek bir işlem karması 4f7c80c05fd77a9c9b180f7f6400560d1ab6cf3a4ba1b6bf7429eeeefa500a05'tir.⁷
+2.  Ültimatom (1 Temmuz): Sadece 24 dakika sonra, bir takip mesajı gerçek sahibine bir meydan okuma sundu: "Terk edilmedi mi? 30 Eylül'e kadar özel anahtarı kullanarak zincir üstü bir işlemle kanıtla".² Bunun için örnek bir işlem karması e511f90160b2f189eaf0adce7221979cbc9001bc29e6c5476914d002a9d19886'dır.⁷ Bu mesaj, sahibini blok zincirinde önemli olan tek kanıt şekli olan anahtarını kullanmaya cüret etti.
+3.  Yasal Görüntü (3 Temmuz): Üçüncü mesaj, gözlemcileri harici bir web sitesine yönlendirerek operasyonu profesyonelleştirdi: "SAHİBİNE UYARI: bkz. salomonbros.com/owner-notice".² Bunun için örnek bir işlem karması ba9958bca2ae46e5fdea8737fef02bca6cfe1723196917699a058c30b6f52fd8'dir.⁷
+4.  Şifreli İmza (4 Temmuz): Cüzdanlardan en az üçüne gönderilen son mesaj, kripto topluluğunu gizemlileştirmek ve meşgul etmek için tasarlanmış kültürel bir referanstı: "4 8 15 16 23 42".² Bunlar, kader, kontrol ve gizli bilgi temalarıyla ilişkilendirilen Lost televizyon dizisindeki kötü şöhretli, esrarengiz "Kayıp Sayılar"dır. Örnek bir işlem karması ac35cc92a1d97298c7b2a89e1f8260da61d0447c28927585baecd2bfa863aec0'dır.²
+
+Bu sıra rastgele değildi. Gözlemcileri karıştırmak ve hikayeyi kontrol etmek için tasarlanmış çok katmanlı bir anlatı yaratan, yasal gözdağı ile şifreli popüler kültürü harmanlayan dikkatle düzenlenmiş bir performanstı. Bir avukat, bir mistik, bir serseri gibi kişiliklerin birleşimi, sofistike bir psikolojik operasyonun göstergesidir.
+
+Karşı Taraf Toz İşlemi
+
+İlk kullanıcı sorgusu, 548 satoshilik bir "Karşı Taraf tozu" işlemine olan ilgiyi belirtti. Counterparty, genellikle işlemlere veri gömerek Bitcoin blok zinciri üzerinde varlıkların oluşturulmasına ve akıllı sözleşmelerin yürütülmesine olanak tanıyan bir protokoldür. Toz, genellikle harcanamayan küçük bir miktar kripto para birimini ifade eder.¹⁶ Sağlanan kaynak materyaller, toz kavramını ve OP_RETURN mesajlarının kullanımını kapsamlı bir şekilde tartışsa da, bu olayla bağlantılı 548 satoshilik bir Karşı Taraf işlemine ilişkin belirli, doğrulanabilir bir referans içermemektedir. Böyle bir işlemin önemi, doğrulanması halinde, aktörün aynı blok zincirinde birden fazla protokol katmanı kullanarak veri iletme veya gömme yeteneğini göstererek henüz başka bir teknik karmaşıklık katmanı eklemek olacaktır. Birincil kamu analizlerinde bulunmaması, bunun niş adli tıp çevrelerinden bir ayrıntı veya potansiyel bir yanlış yorum olabileceğini düşündürmektedir.
+
+1.3 "Salomon Brothers" Görüntüsü: Arşiv ve Alan Adı Analizi
+
+salomonbros.com web sitesi, aktörün yasallık görüntüsüne kurumsal bir meşruiyet katarak operasyonun zincir dışı çıpasıydı.²
+
+Alan Adı Geçmişi ve İçeriği
+
+salomonbros.com alan adı 6 Ocak 2023'te kaydedildi, bu da uzun vadeli planlamayı gösteriyor. OP_RETURN kampanyası başlamadan hemen önce, 1 Temmuz 2025'te güncellendi.⁷ Blok zinciri mesajında atıfta bulunulan belirli sayfa, /owner-notice, 3 Temmuz 2025'te yayınlandı ve İnternet Arşivi'nin Wayback Machine'i tarafından 3 ve 4 Temmuz'da arşivlenerek ilk durumu yakalandı.⁷
+
+Web sitesinin kendisi şık ve profesyoneldi, feshedilmiş ancak efsanevi Wall Street firması Salomon Brothers'ın adıyla markalanmıştı, bu tarihsel bir ironi yüklü bir seçimdi.¹⁵ /owner-notice sayfası resmi bir yasal uyarı barındırıyordu. Hareketsiz cüzdanların "yapıcı mülkiyetini" iddia ediyor ve "gerçek sahibine" mülkiyetlerini kanıtlamaları için 90 günlük bir ültimatom (rapora bağlı olarak 30 Eylül veya 5 Ekim 2025 olarak belirtilen bir son tarihle) veriyordu.¹ Site, kanıt için iki yöntem sunuyordu: özel anahtarla zincir üstü bir mesaj imzalamak veya bir web formu aracılığıyla kişisel bilgileri göndermek - ikincisi, sahibini anonimlikten çıkarmak için klasik bir oltalama tekniğidir.¹⁵ Bu çerçevenin tamamı, tipik olarak gayrimenkul için kullanılan gerçek dünya yasal doktrini olan "zilyetlik yoluyla mülk edinme"yi dijital varlıkların yeni bağlamına uygulama girişimiydi.¹
+
+Gerçek Dünya Bağlantıları ve Yanlış Yönlendirme
+
+Başka bir entrika katmanı ekleyerek, zincir üstü araştırmacı @Cyphertux, salomonbros.com web sitesinde listelenen adresin, blok zinciri soruşturması ve adli hizmetleriyle tanınan büyük bir muhasebe ve danışmanlık firması olan EisnerAmper'in fiziksel merkezine karşılık geldiğini belirtti.¹³ EisnerAmper, Silk Road karanlık ağ pazarının kurucusu Ross Ulbricht'in maskesini düşüren araştırmacıyla işbirliği yapmıştı.¹³ Bu bağlantı ikili bir amaca hizmet ediyor: ya meşru adli veya yasal kuruluşlarla bağlantılı inanılmaz derecede cüretkar bir operasyona işaret ediyor ya da şüpheyi devlet düzeyindeki aktörlere yöneltmek ve gerçek faillerden uzaklaştırmak için ustaca hazırlanmış bir kırmızı ringa balığıdır.
+
+Tablo 1: Zincir Üstü İşlem Özeti
+
+Aşağıdaki tablo, 80.000 BTC hareketiyle ilgili temel zincir üstü veriler için, birden fazla zincir üstü analiz raporundan ve blok zinciri gezgininden derlenmiş birleştirilmiş, güvenilir bir referans sağlar. Bu rapordaki analizin olgusal temelini oluşturur.
+
+| Kaynak Adres (P2PKH) | İlk Fonlama Tarihi | Ana BTC TXID (4-5 Temmuz 2025) | Hedef Adres (SegWit) | Notlar |
+| :--- | :--- | :--- | :--- | :--- |
+| 12tLs9c9RsALt4ockxa1hB4iTCTSmxj2me | 2 Nis 2011 | 9d5d67169a37222720b407c99939f7baa40587eef9ab16ec3a17c7c856ef9045¹⁹ | Bilinmeyen bc1q... adresi | Önleyici BCH test işleminin onaylanmış kaynağı.⁷ |
+| 1KbrSKrT3GeEruTuuYYUSQ35JwKbrAWJYm | 2 Nis 2011 | 6ba8cefee9a922de94d9faa4f65128967ba2b166d0e85eee8a4ace1d045a3b42²⁰ | Bilinmeyen bc1q... adresi | Yıllar içinde birden fazla toz işlemi aldı.²¹ |
+| 1P1iThxBH542Gmk1kZNXyji4E4iwpvSbrt | 4 May 2011 | 702c8af9e767cbdfb47d4dca3a875f8a890f476f0105e41d582ea3fa904997aa²² | Bilinmeyen bc1q... adresi | "Kayıp Sayılar" OP_RETURN mesajının hedeflerinden biriydi.⁷ |
+| 1CPaziTeda2b4ih295L3s5a4hT4T7yK1eR | 4 May 2011 | TXID Kaynaklarda Bulunamadı | Bilinmeyen bc1q... adresi | 8 cüzdanlık kümenin bir parçası olarak tanımlandı.⁷ |
+| 14YK4mz... (Kısmi) | 4 May 2011 | TXID Kaynaklarda Bulunamadı | Bilinmeyen bc1q... adresi | 8 cüzdanlık kümenin bir parçası olarak tanımlandı.⁷ |
+| 1ucXXZQ... (Kısmi) | 4 May 2011 | TXID Kaynaklarda Bulunamadı | Bilinmeyen bc1q... adresi | 8 cüzdanlık kümenin bir parçası olarak tanımlandı.⁷ |
+| 1BAFWQhH9pNkz3mZDQ1tWrtKkSHVCkc3fV | 4 May 2011 | TXID Kaynaklarda Bulunamadı | Bilinmeyen bc1q... adresi | Dört sıralı OP_RETURN mesajının da hedefiydi.⁷ |
+| 1f1miYFQWTzdLiCBxtHHnNiW7WAWPUccr | 4 May 2011 | 138e8e608fc406baea409e2e52e0edad77104d9b282da4eb6c515386398d45fe²³ | bc1qwq5geath93h0lnfsrmnwnfuck2f9ypv4ewyl4j | Hedef, kışkırtıcı bir makyaj adresidir.⁷ |
+
+Bölüm II: Kamusal Alan — Rakip Anlatılar Külliyatı
+
+4 Temmuz Anomalisi, zincir üstü gerçekleri yorumlamak için devasa, küresel bir çabayı tetikledi. Bu bölüm, Reddit, Twitter ve Bitcointalk forumu gibi platformlarda ortaya çıkan baskın hipotezleri kategorize ederek kamusal tepkiyi yapıbozuma uğratır. Her bir teori için gösterilen kanıtları analiz eder ve farklı topluluklar içindeki yaygınlığını ve güvenilirliğini yansıtan bir duyarlılık analizi sunar. Önemli bir bulgu, ana akım finans ve kripto yerlisi toplulukların aynı gerçekleri nasıl yorumladığı arasındaki keskin farktır; bu da risk algısı ve analitik çerçevelerde temel bir farkı ortaya koymaktadır.
+
+2.1 Hipotez A: "Panik Halindeki Sahip"
+
+●  Temel Argüman: Bu hipotez, olayların 80.000 BTC'nin meşru, orijinal sahibi tarafından başlatıldığını varsayar. Uzun vadeli bir sahip olan bu birey, muhtemelen agresif OP_RETURN spam'inden ve salomonbros.com web sitesindeki profesyonel görünümlü yasal tehditlerden ürktü. Buna karşılık, varlıklarını önleyici olarak korumak için devasa servetini eski, potansiyel olarak savunmasız P2PKH cüzdanlarından daha güvenli, modern SegWit adreslerine taşımaya karar verdi.³ Böylece tüm operasyon, ihtiyatlı, büyük de olsa bir güvenlik yükseltmesi olarak çerçevelenir.⁵
+
+●  Destekleyici Kanıtlar: Bu teorinin savunucuları birkaç temel gerçeğe işaret etmektedir. İlk olarak, hedef adresler yeni SegWit cüzdanlarıydı, bu da güvenliği artırmak ve işlem ücretlerini düşürmek için yerleşik bir en iyi uygulamadır.⁵ İkincisi, fonların hiçbiri kripto para borsalarına gönderilmedi, bu da anında bir satış korkusunu hafifletir ve amacın tasfiye değil, birleştirme olduğunu düşündürür.⁵ Son olarak, transferlerin zamanlaması, OP_RETURN mesajlarının yayınlanmasından kısa bir süre sonra gerçekleşmesi, algılanan tehdide doğrudan bir tepki olduğunu kuvvetle düşündürmektedir.³
+
+●  Duyarlılık: Bu açıklama, ana akım finans haber kaynakları ve genel yayınlar tarafından yaygın olarak rapor edildi ve tercih edildi.³ En basit, en az endişe verici ve en kolay sindirilebilir anlatıdır, çünkü Bitcoin'in güvenliğinin ihlal edildiğini ima etmez. Bununla birlikte, derin kripto analistleri ve zincir üstü adli bilişim toplulukları arasında, daha az olası, ancak yine de makul bir teori olarak kabul edilir.⁴ Olayın salt teatralitesi, güvenlik bilincine sahip bir sahibin sessiz ihtiyatıyla tutarsız görünmektedir.
+
+2.2 Hipotez B: "Yasal Sömürü / Sofistike Soygun"
+
+●  Temel Argüman: Bu, "Panik Halindeki Sahip" teorisinin antitezidir. Transferin sahibi tarafından yapılan bir savunma hamlesi değil, özel anahtarları bir kriptografik sömürü yoluyla başarıyla ele geçiren sofistike bir saldırgan tarafından düşmanca bir devralma olduğunu savunur.² Ayrıntılı yasal görünüm, OP_RETURN mesajları ve salomonbros.com web sitesi, transferin nedeni değil, saldırının kendisinin parlak ve ayrılmaz bir parçasıydı - hırsızlığı meşrulaştırmak, yasal belirsizlik yaratmak ve hem kurbanı hem de halkı psikolojik olarak manipüle etmek için tasarlanmış bir sis perdesi.¹
+
+●  Destekleyici Kanıtlar: Bu teori, olayın teknik ve operasyonel detayları tarafından desteklenmektedir. Sekiz bağımsız cüzdandan yapılan eşzamanlı hareketlerin aşırı hassasiyeti ve koordinasyonu, bir insan sahibinin manuel olarak anahtarları yönetmesini değil, otomasyon ve tekil kontrolü düşündürmektedir.² Bitcoin Cash test işleminin kullanılması önemli bir kanıt parçasıdır, çünkü ana saldırıdan önce sömürünün soğuk, hesaplanmış bir doğrulamasını gösterir - meşru bir sahibin yapmasına gerek olmayan bir adım.⁴ Ayrıca, "Kayıp Sayılar" mesajının ve makyaj adresinin şifreli ve alaycı doğası, gizli bir milyarderin değil, meydan okuyan bir bilgisayar korsanının imzası olarak görülüyor.² Coinbase Ürün Müdürü Conor Grogan, cüzdanların gerçekten ele geçirilmesi durumunda bunun "tarihteki en büyük hırsızlık" olabileceğini kamuoyuna açıkladı.⁴
+
+●  Duyarlılık: Bu, zincir üstü analistler, kriptografik araştırmacılar ve kripto yerlisi topluluk arasında baskın teoridir.⁴ Teknik karmaşıklık, psikolojik manipülasyon ve yasal tiyatro gibi tüm kanıt yelpazesini açıkladığı için en çekici açıklama olarak görülmektedir.
+
+2.3 Hipotez C: "Beyaz Şapka / Etik Uyarı"
+
+●  Temel Argüman: Bu hipotez, düşmanca devralma teorisine daha iyimser bir yorum sunar. Aktörün, erken Bitcoin cüzdanlarının anahtarlarını nasıl ürettiğine dair kritik bir güvenlik açığını bağımsız olarak keşfeden bir "beyaz şapkalı" veya "etik bilgisayar korsanı" olduğunu varsayar. 80.000 BTC'lik transfer, o kadar muhteşem olacak şekilde tasarlanmış büyük, halka açık bir kavram kanıtıydı ki, Bitcoin'i zorlayacaktı... 
+
+●  Destekleyici Kanıtlar: Bu teoriye göre, aktörün fonları tutma niyeti yoktur ve sonunda onları iade etmeye veya orijinal sahibi adına güvence altına almak için kolluk kuvvetleriyle çalışmaya çalışabilir.
+
+●  Destekleyici Kanıtlar: Bu teorinin birincil kanıtı, aktörün sömürü sonrası davranışıdır. 80.000 BTC'yi hemen aklayıp satabilirlerdi, ancak bunun yerine onları yeni, harcanmamış adreslere taşımayı seçtiler.⁵ Eylemin son derece halka açık doğası, varlıklarını duyurmak için OP_RETURN mesajlarını kullanmak, gizli bir hırsızlıktan ziyade sorumlu (dramatik de olsa) bir ifşa şekli olarak yorumlanabilir.¹ Kripto alanında, özellikle Ethereum platformunda, beyaz şapkalı grupların fonları yaklaşan saldırılardan korumak için savunmasız akıllı sözleşmelerden taşıdığı tarihsel emsaller vardır.²⁷
+
+●  Duyarlılık: Bu umut verici ancak daha az atıfta bulunulan bir teoridir. Olaydan olumlu, ekosistemi güçlendiren bir sonuç görmek isteyen topluluktaki kişiler arasında popülerdir. Bununla birlikte, OP_RETURN mesajlarında ve web sitesinde kullanılan agresif ve göz korkutucu yasal dil nedeniyle daha az olası olarak görülür, bu da etik bir uyarıdan ziyade düşmanca bir eylemle daha uyumlu görünmektedir.²⁸
+
+2.4 Hipotez D: "Craig Wright / Kırmızı Ringa Balığı"
+
+●  Temel Argüman: Bu teori, olayın, Satoshi Nakamoto olduğunu iddia eden tartışmalı Avustralyalı bilgisayar bilimcisi Craig Wright gibi figürlerin davranışını taklit eden teğetsel "ipuçları" ve üslup unsurlarıyla kasıtlı olarak tohumlandığını öne sürer. Bu ipuçlarının amacı, gerçekten Wright'ı fail olarak göstermek değil, kaos, yanlış yönlendirme ve sonsuz tartışma ekmek için tasarlanmış sofistike bir kırmızı ringa balığı olarak hareket etmek ve böylece saldırganın gerçek kimliğini ve yöntemlerini kamufle etmektir.
+
+●  Destekleyici Kanıtlar: Zincir üstü analist @Cyphertux, Craig Wright ile ilgili bir PDF belgesinin olayla aynı gün değiştirildiği bildirilen tuhaf tesadüfü kaydetti.²⁶ Ayrıca, Wright'ın yasal tehditler kullanma ve "Süleyman'ın" anahtarları hakkında iddialarda bulunma konusunda iyi belgelenmiş bir geçmişi vardır, bu da olayın taktiklerini üslup olarak yansıtmaktadır.²⁹ Sofistike bir aktör, Wright ile ne kadar zayıf olursa olsun herhangi bir bağlantının anında büyük ve dikkat dağıtıcı bir tartışma, alay ve medya ilgisi fırtınasını tetikleyeceğini, operasyonları için mükemmel bir örtü sağlayacağını bilirdi.
+
+●  Karşı Argüman: Craig Wright, mahkemede ve kamuoyunda Satoshi Nakamoto olduğuna veya Satoshi'nin cüzdanlarından herhangi birini kontrol ettiğine dair herhangi bir kriptografik kanıt sunmakta defalarca başarısız oldu.³ Teknik topluluktaki güvenilirliği fiilen sıfırdır. Bu nedenle, kendisinin bu karmaşıklıkta bir sömürü gerçekleştirebileceği fikri yaygın olarak reddedilmektedir.
+
+●  Duyarlılık: Craig Wright'ın kelimenin tam anlamıyla olayın arkasında olduğu teorisi, çok düşük güvenilirliğe sahip bir uç teori olarak kabul edilir. Bununla birlikte, daha incelikli yorum - olayın kasıtlı bir yanlış yönlendirme olarak onun yapacağı bir şeye benzeyecek şekilde tasarlandığı - anlatı savaşının değerini takdir eden sofistike analistler tarafından oldukça makul görülmektedir.²⁶
+
+2.5 Hipotez E: "Devlet Düzeyinde Aktör"
+
+●  Temel Argüman: Bu hipotez, ABD Gelir İdaresi (IRS) veya Federal Soruşturma Bürosu (FBI) gibi bir devlet kurumunun operasyonun arkasında olduğunu varsayar. Güdü iki katlı olabilir: ya terk edilmiş veya yasa dışı olarak elde edilmiş sayılan dijital varlıklara el koymak ya da istihbarat ve kolluk kuvvetleri amaçları için küresel finans sistemi aracılığıyla gelecekteki hareketlerini izlemek için bu yüksek değerli, anonim paraları "etiketlemek".
+
+●  Destekleyici Kanıtlar: Devlet kurumlarının kripto para işlemlerini aktif olarak takip ettiği ve bunu yapmak için Chainalysis gibi blok zinciri analiz firmalarını kullandığı bilinmektedir.³² Operasyonun son derece organize, iyi kaynaklanmış ve metodik doğası, bir devlet aktörünün yetenekleriyle tutarlıdır. OP_RETURN bildirimlerinin ve salomonbros.com web sitesinin "terk edilmiş" mülk üzerinde bir hak iddiası kurmaya çalışan yasalcı dili, sivil müsadere veya el koyma yasal süreçlerini yakından taklit etmektedir.¹ En çekici ikinci dereceden kanıt, büyük federal davalara karışma geçmişi olan gerçek dünya adli muhasebe firması EisnerAmper ile olan bağlantıdır.¹³
+
+●  Duyarlılık: Bu, özellikle siberpunk veya hükümet karşıtı bir dünya görüşüne sahip olanlar arasında popüler olan spekülatif ancak ısrarcı bir teoridir. Doğrudan bir itiraf olmadan kanıtlanması zor olsa da, operasyonun karmaşıklık profiline ve teknik ve yasal taktikleri harmanlamasına uymaktadır.
+
+Bu hipotezlerin en güvenilir olanları - Soygun, Beyaz Şapka ve Devlet Aktörü - hepsi tek bir, hayati önkoşulda birleşir: başarılı bir kriptografik sömürü. Varyasyonlar, aktörün güdüsü ve kimliği hakkındadır, temel yöntem hakkında değil. Bu, soruşturmanın özünün, ilk etapta özel anahtarların ele geçirilmesine izin veren teknik güvenlik açığı olması gerektiğini ortaya koymaktadır. Geri kalanı, yasal tehditlerden şifreli sayılara kadar, bu merkezi teknik başarının etrafında inşa edilmiş bir tiyatrodur. Bu olay aynı zamanda "Yasal-Yazılım" olarak adlandırılabilecek yeni bir hibrit saldırı biçimine öncülük etmektedir: teknik saldırı varlıkları güvence altına alırken kurbanı belirsizlikle felç etmek için tasarlanmış bir dijital varlık sömürüsünün aktif bir bileşeni olarak yasal kavramların ve tehditlerin kullanılması.
+
+Bölüm III: Makinedeki Hayalet — Sömürüye Teknik Bir Derin Dalış
+
+14 yıldır dokunulmamış cüzdanlardan 80.000 BTC'nin nasıl taşınabildiğini anlamak için, en güvenilir hipotezin teknik temellerini analiz etmek esastır: erken Bitcoin cüzdanlarındaki zayıflıkları hedef alan bir kriptografik sömürü. Bu bölüm, eski adres formatlarındaki güvenlik açıklarının ve bunları tehlikeye atmak için kullanılan sofistike saldırı yöntemlerinin, kriptografi uzmanı olmayan birine erişilebilir bir şekilde sunulan ayrıntılı bir analizini sunar. Sorunun özü, Bitcoin protokolünün kendisindeki bir kusur değil, anahtarları oluşturmak için kullanılan yazılımın tarihsel uygulamasındaki bir kusurdur.
+
+3.1 Bitcoin'in Kriptografik Soyağacı: P2PKH'nin Solan Şanı
+
+4 Temmuz olayında hedeflenen cüzdanların tümü, Bitcoin'deki en eski ve orijinal adres formatı olan Pay-to-PubKey-Hash (P2PKH) türündeydi.⁷ Bu eski format ile modern standartlar arasındaki farkları anlamak, bu belirli cüzdanların neden savunmasız olduğunu kavramak için çok önemlidir.
+
+● P2PKH (Eski): '1' sayısı ile başlayan bu adresler, Bitcoin'in ilk yıllarında (2009-2013) standarttı.⁹ Bir P2PKH şemasında, genel adres, sahibinin genel anahtarının bir karmasıdır. Tam genel anahtarın kendisi, o adresten ilk kez para harcanana kadar blok zincirinde ortaya çıkmaz.³⁵ Bu, tam genel anahtarı gerektiren saldırılara (kuantum saldırıları gibi) karşı bir koruma katmanı sağlarken, bu adreslerin birincil güvenlik açığı, ilgili özel anahtarlarının nasıl oluşturulduğunda yatmaktadır. O dönemin erken cüzdan yazılımları ve web siteleri, genellikle öngörülebilir veya taraflı özel anahtarlara yol açabilen kusurlu veya zayıf Rastgele Sayı Üreteçleri (RNG'ler) kullanıyordu.² P2PKH adresleri ayrıca daha az verimlidir ve modern formatlara kıyasla daha yüksek işlem ücretlerine neden olur.⁹
+
+● SegWit (P2WPKH): 2017'de tanıtılan Segregated Witness (SegWit), ölçeklenebilirliği artırmak ve işlem esnekliğini düzeltmek için tasarlanmış büyük bir ağ yükseltmesiydi. Native SegWit adresleri (P2WPKH) 'bc1q' ile başlar.⁹ Dijital imza verilerini ("tanık") çekirdek işlem verilerinden ayırarak, SegWit bir bloğa daha fazla işlem sığmasına izin verir, böylece ücretleri düşürür.¹⁰ Güvenlik açısından, SegWit cüzdanları, rastgelelik için daha sağlam standartlara sahip modern yazılımlar tarafından oluşturulur ve adres formatının kendisi, yazım hatalarını önlemek için daha iyi hata düzeltme kodları içerir.⁹
+
+● Taproot (P2TR): 2021'de etkinleştirilen en son büyük yükseltme, 'bc1p' ile başlayan Taproot adreslerini tanıttı.⁹ Taproot, öncelikle Schnorr imzalarının uygulanmasıyla gizlilik ve akıllı sözleşme yeteneklerinde önemli geliştirmeler getirir. Schnorr imzaları, imza birleştirmeye izin verir, bu da karmaşık çoklu imza işlemlerini (yüksek güvenlikli kurumsal saklama için yaygın) blok zincirinde basit, tek imzalı işlemlerden ayırt edilemez hale getirir.³⁸ Güvenlik açısından Taproot, büyük bir ileri adımdır. Fonlar harcandıktan sonra bile tam genel anahtarı zincir üstünde asla ortaya çıkarmayacak şekilde yapılandırılabilir, bu da bir özel anahtarı ilgili genel anahtarından türetebilecek gelecekteki bir kuantum hesaplama saldırıları sınıfına karşı güçlü bir teorik savunma sunar.¹¹
+
+Tablo 2: Bitcoin Adres Formatlarının Karşılaştırmalı Analizi
+
+Bu tablo, Bitcoin adreslerinin evrimini görsel olarak ifade eder ve 2010-2011 P2PKH cüzdanlarının neden 4 Temmuz sömürüsü için özel ve uygun bir hedef olduğunu vurgular. Olayı bir bütün olarak "Bitcoin"in bir başarısısılığı olarak değil, sistemin belirli, eski bir bileşeninin sömürülmesi olarak çerçeveler.
+
+| Özellik | P2PKH (Eski, yaklaşık 2011) | SegWit (P2WPKH, yaklaşık 2017) | Taproot (P2TR, yaklaşık 2021) |
+| :--- | :--- | :--- | :--- |
+| Adres Öneki | 1... | bc1q... | bc1p... |
+| İmza Algoritması | ECDSA | ECDSA | Schnorr İmzaları |
+| Genel Anahtarın Açığa Çıkması | İlk harcamada ortaya çıkar³⁵ | İlk harcamada ortaya çıkar | Asla ortaya çıkmayacak şekilde yapılandırılabilir³⁶ |
+| Birincil Güvenlik Açığı | Erken cüzdan yazılımında zayıf RNG, taraflı ECDSA nonce'larına yol açar² | İşlem Esnekliği (büyük ölçüde düzeltildi) | Teorik saldırılar; daha sağlam tasarım |
+| Kuantum Direnci | Düşük (eğer genel anahtar açıksa) | Düşük (eğer genel anahtar açıksa) | Yüksek |
+| Gizlilik | Düşük⁹ | Orta | Yüksek (Schnorr/MAST gizliliği nedeniyle)¹¹ |
+| Ücret Verimliliği | Düşük⁹ | Yüksek¹⁰ | En Yüksek (karmaşık işlemler için)¹⁰ |
+ 
+3.2 ECDSA'nın Aşil Topuğu: Nonce
+
+4 Temmuz Anomalisinin kalbindeki kriptografik sömürü, Bitcoin'in işlemleri doğrulamak için kullandığı sistem olan Eliptik Eğri Dijital İmza Algoritmasının (ECDSA) ince ama kritik bir bileşenini hedef almaktadır.⁴¹
+
+●  Kritik Nonce (k): Bir dijital imza oluşturmak için, ECDSA algoritması imzalayanın özel anahtarını, imzalanan mesajın karmasını ve "nonce" olarak bilinen, k değişkeni ile gösterilen gizli, tek kullanımlık bir rastgele sayı gerektirir.⁴⁰ Tüm sistemin güvenliği, bu nonce'ın aynı özel anahtarla oluşturulan her bir imza için tahmin edilemez ve benzersiz olmasına bağlıdır.
+
+●  Nonce'un Yeniden Kullanım Felaketi: Eğer aynı nonce k, aynı özel anahtarla iki farklı mesajı imzalamak için kullanılırsa, özel anahtar artık gizli değildir. İki genel imzadan basit cebir kullanılarak kolayca kurtarılabilir.⁴⁰ Bu teorik bir kusur değildir; 2010'daki kötü şöhretli Sony PlayStation 3 saldırısından sorumlu olan iyi bilinen bir uygulama hatasıdır, burada Sony statik, rastgele olmayan bir nonce kullanmış ve bilgisayar korsanlarının konsolun ana imza anahtarını hesaplamasına izin vermiştir.⁴⁰
+
+●  Taraflı Nonce Güvenlik Açığı: 4 Temmuz olayı muhtemelen tam olarak aynı nonce'un bu kadar bariz bir şekilde yeniden kullanılmasını içermiyordu. Saldırı daha karmaşıktı ve daha ince ama aynı derecede yıkıcı bir kusurdan yararlanıyordu: taraflı nonce'lar. Cüzdan yazılımının nonce k'yi oluşturmak için kullandığı Rastgele Sayı Üreteci (RNG) kusurluysa, ürettiği nonce'lar gerçekten rastgele değildir. Öngörülebilir desenler sergileyebilirler. Örneğin, sürekli olarak gerekli 256 bitten daha kısa olabilirler veya belirli sayıda baştaki bitleri her zaman sıfır olabilir.²⁶ Bu, 2013'te bazı Android Bitcoin cüzdanlarından fonların çalınmasına yol açan güvenlik açığıydı, bu cüzdanlar Java'nın SecureRandom sınıfının kusurlu bir uygulamasını kullanıyordu.⁴⁰ 4 Temmuz'da hedeflenen, 2010-2011 döneminde oluşturulan cüzdanlar, erken Bitcoin yazılımında bu tür zayıf RNG uygulamalarıyla kötü şöhretli bir dönemdendir.⁷
+
+3.3 Örgü Saldırısı Sanatı: Taraflı İmzaları Kırmak
+
+Bir özel anahtar, taraflı nonce'larla birden fazla imza oluşturmak için kullanıldığında, örgü saldırısı olarak bilinen güçlü bir kriptanalitik tekniğe karşı savunmasız hale gelir.⁴⁷
+
+●  Kavram: Bir örgü saldırısı, hepsi zayıf veya taraflı bir RNG'den gelen nonce'lar kullanılarak oluşturulmuş bir dizi genel imzayı analiz ederek gizli bir özel anahtarı kurtarabilir. Nonce'ları bilmeyi gerektirmez, sadece öngörülebilir bir kusuru paylaştıklarını bilmek yeterlidir.
+
+●  Mekanik (Basitleştirilmiş):
+
+1.  Gizli Sayı Problemi (HNP): Temel matematiksel zorluk Gizli Sayı Problemi olarak bilinir. Her taraflı imza, gizli özel anahtar hakkında küçük, kusurlu bir "ipucu" sağlar. HNP, elinizdeki tek şey bu bulanık ipuçlarının büyük bir koleksiyonu olduğunda tam gizli sayıyı (özel anahtar) bulma problemidir.⁴² ECDSA imza denklemi, s=k⁻¹(h+dr)(modn), k≡s⁻¹h+(s⁻¹r)d(modn) şeklinde yeniden düzenlenebilir. Eğer nonce k taraflıysa (örneğin küçükse), bu denklem özel anahtar d hakkında bir ipucu veren bir doğrusal kongrüans sağlar.
+
+2.  Geometrik Bir Araç Olarak Örgüler: Saldırgan bu matematiksel ipuçlarını (her imzadan gelen doğrusal kongrüansları) alır ve bunları yüksek boyutlu bir uzayda bir vektör kümesi olarak temsil eder. Bu vektörler, örgü adı verilen geometrik bir ızgara benzeri yapının noktalarını tanımlar.⁵²
+
+3.  En Kısa Vektörü Bulma: Denklem sisteminin çözümü - ki bu özel anahtarı ortaya çıkarır - bu son derece karmaşık örgü içinde benzersiz bir şekilde "kısa" bir vektöre (veya iki nokta arasındaki bir yola) karşılık gelir. Özel anahtarı bulma problemi böylece örgüdeki en kısa yolu bulma geometrik bir probleme dönüşür.
+
+4.  Örgü İndirgeme Algoritmaları (LLL/BKZ): Bir örgüdeki mutlak en kısa vektörü bulmak hesaplama açısından zor olsa da, LLL (Lenstra-Lenstra-Lovász) ve BKZ (Block Korkine-Zolotarev) gibi güçlü algoritmalar, genellikle doğru çözüm olan çok kısa bir vektörü verimli bir şekilde bulabilir.⁴³ Saldırgan, genel imza verilerini bu algoritmalara besleyerek HNP'yi çözebilir ve özel anahtarı kurtarabilir. Saldırının başarı oranı, toplanan imza sayısı ve nonce'lardaki taraflılık derecesi ile artar.⁴²
+
+3.4 Vaka Çalışması: "JohnnyTX" / Bulmaca #130 Emsali (Temmuz-Eylül 2024)
+
+Böyle bir saldırının fizibilitesi sadece teorik değildir. Temmuz-Eylül 2024 olayları, gereken kaynakların ve tekniklerin çarpıcı bir kamu gösterimini sağladı.
+
+● Bulmacalar: "JohnnyTX" adlı bir kullanıcı ve diğerleri tarafından oluşturulan Bitcoin "İşlem Bulmacaları", toplulukta uzun süredir devam eden bir meydan okumadır. Gerçek BTC ile finanse edilen, ancak özel anahtarları kasıtlı olarak zayıflatılmış Bitcoin adreslerinden oluşurlar. Örneğin, bir anahtar, ilk 190 biti tamamen sıfır olan 256 bitlik bir sayı olabilir ve keşfedilecek sadece 66 bitlik "entropi" bırakır.⁵⁵
+
+● 2024 Atılımları: 2024 yazında, topluluk yıllardır çözülemeyen birkaç yüksek zorluktaki bulmacanın çözülmesine tanık oldu. Özellikle, Bulmaca #66 (66 bit entropi ile) çözüldü ve daha da önemlisi, Bulmaca #130 kırıldı.⁵⁵ Bulmaca #130, genel anahtarın bilindiği özel bir durumdu ve 130 bitlik anahtarı kırmak için gereken etkili işi, Pollard'ın rho gibi algoritmaları kullanarak kabaca 2⁶⁵ işleme indirdi.⁵⁵
+
+● Öncül Olarak Önemi: Bu bulmacaların çözülmesi, 4 Temmuz Anomalisi için kritik bir teknik öncüldü. Bilinen bir zayıflık derecesine sahip anahtarları kırmak için gereken hesaplama gücünün (devasa, dağıtılmış GPU kümeleri aracılığıyla) ve matematiksel algoritmaların artık iyi kaynaklara sahip, devlet dışı aktörler için pratik olarak erişilebilir olduğunu kanıtlayan halka açık, gerçek dünya bir ölçüt olarak hizmet etti. 80 bin BTC'lik soygunu planlayan sofistike bir saldırgan için, Bulmaca #130'un düşüşü "kömür madenindeki kanarya" idi - zayıf RNG döneminden benzer (veya daha büyük) zayıflıklara sahip gerçek dünya cüzdanlarına karşı planladıkları saldırının artık hesaplama açısından mümkün olduğuna dair açık bir sinyal.
+
+Bu faktörlerin birleşimi - kusurlu yazılımla oluşturulmuş bir dizi eski P2PKH cüzdanının varlığı, blok zincirinin halka açık doğasının yıllar boyunca imzaların toplanmasına izin vermesi ve bir örgü saldırısı yürütmek için gereken hesaplama gücü ve algoritmaların son zamanlarda demokratikleşmesi - 4 Temmuz Anomalisi için mükemmel bir fırtına yarattı.
+
+Bölüm IV: Artçı Şok — Sistemik Riskler ve Bitcoin'in Geleceği
+
+4 Temmuz Anomalisi, sadece bir fon transferinin ötesine geçer; Bitcoin ekosistemi içindeki temel zorlukları ve sistemik riskleri ortaya çıkaran sismik bir olaydır. Artçı şokları yıllarca yankılanacak, ağın teknik evrimini, ekonomik anlatılarını, yasal statüsünü ve kurumsal yatırımcılara olan çekiciliğini etkileyecektir. Olay, Bitcoin'in uyum sağlama yeteneği, arzının kesinliği, dijital mülkiyetin doğası ve piyasa anlatısının kırılganlığı hakkında zor sorularla bir yüzleşmeyi zorlar.
+
+4.1 Kriptografik Çeviklik: Bitcoin'in Evrimleşememesi
+
+Eski P2PKH cüzdanlarının sömürülmesi, "kriptografik eskime"nin - kriptografik algoritmaların zamanla bilgi işlem ve kriptanalizdeki ilerlemelerle zayıfladığı kaçınılmaz süreç - çarpıcı ve pratik bir örneği olarak hizmet eder.⁵⁹ 4 Temmuz olayı, bir gün ECDSA algoritmasını tamamen kırması beklenen çok daha büyük, uzun zamandır beklenen kuantum hesaplama tehdidi için canlı bir tatbikattır.²⁴
+
+Bu, Bitcoin için temel bir yapısal zorluğu vurgulamaktadır: kriptografik çeviklik eksikliği. Kripto-çeviklik, bir sistemin altyapısında yıkıcı değişiklikler olmadan yeni, daha güçlü kriptografik algoritmalara sorunsuz bir şekilde geçiş yapma yeteneğidir.⁶⁰ Merkezi bir hizmet için, böyle bir yükseltme yukarıdan aşağıya zorunlu kılınabilir. Bitcoin gibi merkezi olmayan bir ağ için, ağ çapında bir yumuşak veya sert çatal uygulamak için binlerce bağımsız madenci, geliştirici ve kullanıcı arasında geniş, gönüllü bir fikir birliği gerektiren anıtsal bir iştir.
+
+SegWit ve Taproot gibi geçmiş yükseltmelerin yavaş benimsenmesi bu ataleti göstermektedir. Taproot üstün güvenlik ve gizlilik sunarken, ağın önemli bir kısmı daha eski, daha az güvenli adres formatlarını kullanmaya devam etmektedir.³⁹ 4 Temmuz Anomalisi, bunun teorik bir risk olmadığını kanıtlamaktadır. Tüm ağı hızlı ve süratli bir şekilde en son teknoloji kriptografik standartlara taşıyamama, derin bir sistemik güvenlik açığını temsil etmektedir. Ağın gücü - merkezi olmayan ve fikir birliğine dayalı doğası - ortaya çıkan bir tehdide karşı hızlı bir evrim gerektiğinde bir zayıflık haline gelir.
+
+4.2 Arz Belirsizliği: Kayıp Paralar Efsanesi
+
+Bitcoin'in ekonomik anlatısının ve değerleme modellerinin temel taşı, 21 milyon adetle sınırlı mutlak, öngörülebilir kıtlığıdır. Embedded within this narrative is the widespread assumption that a significant portion of the "ancient supply"—coins that have not moved in over a decade—is permanently lost and thus removed from circulation.⁶² As of June 2025, this ancient supply accounted for over 17% of all issued Bitcoin, or nearly 3.4 million BTC.⁶³
+
+4 Temmuz Anomalisi bu rahatlatıcı efsaneyi paramparça ediyor. Daha önce hareketsiz veya kayıp olduğu varsayılan 80.000 coinin aniden aktif arza yeniden girmesi, önemli bir arz şoku oluşturur.⁵ Bu, kritik bir sorunun radikal bir şekilde yeniden değerlendirilmesini zorlar: Bitcoin'in ne kadarı gerçekten kayıp ve ne kadarı sadece hareketsiz ve potansiyel olarak sofistike bir aktör tarafından kurtarılabilir?
+
+Bu olayı mümkün kılan kriptografik zayıflıklar, aynı döneme ait diğer büyük, hareketsiz cüzdanlarda da mevcutsa - varsayımsal olarak Satoshi Nakamoto'ya atfedilen milyonluk zula da dahil olmak üzere - Bitcoin'in etkili dolaşımdaki arzı mevcut modellerin varsaydığından önemli ölçüde daha büyük olabilir. Bu, Bitcoin'in arz dinamiklerine yeni, ölçülemeyen bir değişken getirir. Diğer "hayalet" cüzdanların yeniden uyanma potansiyeli, fiyat üzerinde uzun vadeli aşağı yönlü bir baskı yaratabilir, değer önerisinin ve kurumsal çekiciliğinin çoğunu destekleyen çekirdek "dijital kıtlık" anlatısına meydan okuyabilir.⁶²
+
+4.3 Yasal ve Mülkiyet Boşluğu: "Kod Yasadır" vs. Mülkiyet Hukuku
+
+Aktörün salomonbros.com web sitesini ve yasalcı OP_RETURN mesajlarını metodik olarak kullanması sadece bir tiyatro değildi; iki temelden farklı mülkiyet kavramı arasında bir yüzleşmeyi zorlamak için tasarlanmış hesaplanmış bir yasal kumardı.
+
+●  "Kod Yasadır" Etosu: Yerel kripto ekosistemi içinde, hakim olan etos "kod yasadır" şeklindedir. Özel anahtarın mülkiyeti, sahibine ilişkili varlıkları kontrol etme konusunda tek ve geri alınamaz bir hak veren mutlak mülkiyet kanıtıdır.¹⁵ Bu dünyada, anahtarları başarıyla ele geçiren aktör yeni, meşru sahibidir.
+
+●  Geleneksel Mülkiyet Hukuku: Geleneksel hukuk dünyasında mülkiyet, devlet tarafından verilen ve korunan bir dizi haktır. "Terk edilmiş mülk" ve "zilyetlik yoluyla mülk edinme" gibi kavramlar, belirli koşullar karşılandığı takdirde orijinal sahibinin rızası olmasa bile mülkiyetin devredilebileceği yasal çerçeveler sağlar.⁶⁶
+
+4 Temmuz Anomalisi bu iki dünyayı kasıtlı olarak birbirine çarptırır. Aktör, "terk edilmiş" mülk olarak çerçevelediği şey üzerinde "hak iddiasının" halka açık, değişmez bir kaydını oluşturdu ve orijinal sahibinin öne çıkması için bir "çare" süresi sağladı.¹ Bu, yeni ve derinden rahatsız edici bir yasal soruyu gündeme getiriyor: Bir varlık 14 yıldır zincir üstünde dijital olarak "terk edilmişse", üçüncü bir taraf kontrolünü ele geçirmek için bir kriptografik sömürü kullanabilir ve ardından geleneksel mülkiyet hukuku çerçevesinde koruma ve meşruiyet arayabilir mi? Bu olay, mahkemelerin ve düzenleyicilerin ele almak zorunda kalacağı bir yasal belirsizlik Pandora'nın kutusunu açar.
+
+4.4 Anlatı Kırılganlığı: Kurumsal Güvene Bir Darbe
+
+Bitcoin'in yeni gelişen kurumsal benimsenmesi için, 4 Temmuz Anomalisi yıkıcı bir darbedir. İncelikli teknik gerçeklik - belirli, eski bir bileşenin sömürüldüğü - genellikle daha geniş pazarda kaybolur. "80.000 BTC Çalındı" veya "Bitcoin Hacklendi" manşet riski, piyasa güvenine derinden zarar verir.⁶⁸
+
+Kurumsal yatırımcılar, gibi pension fonları, bağış fonları ve büyük şirketler, sermayeyi büyük ölçekte konuşlandırmadan önce öngörülebilirlik, sağlam güvenlik ve net yasal başvuru yolları gerektirir.⁶⁸ Bu tek olay, kurumsal güvenin üç sütununu da baltalar:
+
+●  Güvenlik: Daha önce büyük ölçüde teorik olarak kabul edilen yeni, son derece teknik ve anlaşılması zor bir güvenlik riski (eski cüzdanlara yönelik örgü saldırıları) ortaya koyar.
+
+●  Öngörülebilirlik: Bitcoin'in gerçek dolaşımdaki arzı hakkında temel bir belirsizlik yaratarak, kurumsal tezlerin üzerine inşa edildiği kıtlık modellerini bozar.
+
+●  Yasal Başvuru: Milyarlarca dolarlık bir servetin bile belirsiz kurtarma veya adalet yollarıyla tehlikeye atılabileceğini göstererek yasal ve mülkiyet boşluğunu vurgular. 
+
+Bu durum, riske karşı isteksiz kurumların, sadece doğrudan finansal kayıptan değil, aynı zamanda önemli itibar hasarından ve düzenleyici incelemeden de korkarak Bitcoin'i benimsemelerini duraklatmalarına, tersine çevirmelerine veya geciktirmelerine neden olabilir.⁶⁹ Spot Bitcoin ETF'leri gibi büyük yatırım ürünlerinin Coinbase gibi tek bir saklama kuruluşuna dayanması gerçeği, bu riski daha da yoğunlaştırarak, Bitcoin'in merkezi olmayan ahlakına aykırı potansiyel bir tek başarısızlık noktası yaratır.⁷⁰
+
+Bu olayın sonrası, Bitcoin'in merkezi olmayan yönetiminin kritik bir testi olarak hizmet edecektir. Kaçınılmaz olarak, işlemleri geri almak için bir sert çatal gibi radikal, merkezi çözümler için çağrılar olacaktır - bu, değişmezlik temel ilkesini ihlal edecek bir hamledir. Tersine, "hiçbir şey yapmama" yaklaşımı, "kod yasadır" ahlakını destekleyecek, ancak etkili bir şekilde 8,6 milyar dolarlık bir hırsızlığı onaylayacaktır. Ardından gelen tartışma, Bitcoin topluluğu içindeki gerçek siyasi ve felsefi fay hatlarını ortaya çıkaracak ve ağın gelecekteki varoluşsal tehditlerle nasıl yüzleşeceği konusunda güçlü bir emsal oluşturacaktır.
+
+Sonuç: Dijital Riskte Bir Paradigma Kayması
+
+4 Temmuz Anomalisi, aktörün nihai kimliği veya güdüsünden bağımsız olarak, Bitcoin ve daha geniş dijital varlık alanı için temel ve geri döndürülemez bir dönüm noktasını temsil etmektedir. Uzun süredir teorileştirilen sofistike bir kriptografik saldırı sınıfının akademik alandan pratik alana geçtiği, daha önce hayal bile edilemeyen bir ölçekte yürütüldüğü anı işaret etmektedir. Olay basit bir hack değil, üst düzey kriptanalizi yasal manevralar ve psikolojik savaşla harmanlayan ustaca düzenlenmiş bir operasyondu.
+
+Bu raporun analizi birkaç temel sonuca götürmektedir. İlk olarak, zincir üstü kanıtların ağırlığı, "panik halindeki sahip" anlatısını savunulamaz hale getirerek, bir kriptografik sömürü yoluyla düşmanca bir devralma hipotezini ezici bir şekilde desteklemektedir. Metodik hassasiyet, zincirler arası "kanarya" testi ve ayrıntılı anlatı yapısı, profesyonel bir düşmanın ayırt edici özellikleridir.
+
+İkincisi, olay, uzun zamandır Bitcoin'in kıtlık anlatısının sessiz bir direği olan "kayıp paralar" hakkındaki rahatlatıcı yanılsamayı paramparça ediyor. Daha önce hareketsiz veya kayıp olduğu varsayılan 80.000 BTC'nin aniden aktif arza yeniden girmesi, geniş bir eski dönem cüzdan hazinesiyle ilişkili riskin piyasa çapında yeniden fiyatlandırılmasını zorlar. Bu, kalıcı ekonomik sonuçları olabilecek yeni ve önemli bir arz belirsizliği unsuru getirir.
+
+Üçüncüsü, olay, merkezi olmayan ağlar için "kriptografik çeviklik" konusundaki kritik zorluğu ortaya koymaktadır. Bitcoin'in istikrar sağlayan bir özellik olan değişime karşı direnci, temel kriptografisinin eskime tehdidi altında olduğunda bir yükümlülük haline gelir. 4 Temmuz Anomalisi, ağın gelecekteki tehditlere, en önemlisi de kuantum bilişimin ortaya çıkışına karşı koymak için daha hızlı evrimleşmenin yollarını bulması gerektiğine dair çarpıcı bir uyarıdır.
+
+Son olarak, olay, blok zincirinin yeni gelişen, koda dayalı yasaları ile geleneksel dünyanın yerleşik mülkiyet yasaları arasında önemli ve kaçınılmaz bir çatışmayı ateşler. Aktörün yasal kumarı, dijital alanda mülkiyet ve terk etmenin ne anlama geldiği sorusuyla toplumsal ve adli bir hesaplaşmayı zorlar.
+
+4 Temmuz Anomalisi, özünde, ekosistemin zorunlu bir olgunlaşmasıdır. Tüm bitcoinlerin eşit kabul edilmediği daha incelikli ve sofistike bir risk anlayışı gerektirir. Muhtemelen "Kriptografik Olarak Savunmasız Mülk" olarak yeni bir risk sınıflandırmasının oluşturulmasını katalize edecek ve eski sistemlerden uzaklaşmayı hızlandıracaktır. Derinden yıkıcı olsa da, saldırı istemeden Bitcoin tarihindeki ağ çapında bir güvenlik yükseltmesi için en güçlü katalizör olarak hizmet edebilir. Bu, saf matematiğe dayalı bir dünyada, bir algoritmanın zarafetinin herhangi bir ordu kadar güçlü olabileceğini, servetleri çağırıp ele geçirebileceğini ve finansın geleceğini yeniden şekillendirebileceğini gösteren acı verici ama gerekli bir derstir.
+
+Alıntılanan çalışmalar
+
+1.  Whale Moves 80,000 Bitcoin Worth $8.6 Billion to New Addresses, erişim tarihi Temmuz 12, 2025, https://www.ainvest.com/news/whale-moves-80-000-bitcoin-worth-8-6-billion-addresses-2507/
+2.  Who Cracked Bitcoin on July 4th? 80000 BTC Moved in What Might Be the First Real Exploit — and You Missed it. | by Eloise | Jul, 2025, erişim tarihi Temmuz 12, 2025, https://eloise88.medium.com/who-cracked-bitcoin-on-july-4th-408230a70f5d
+3.  The world's greatest mystery: Who is Satoshi Nakamoto and how rich is Bitcoin's elusive creator? - The Economic Times, erişim tarihi Temmuz 12, 2025, https://m.economictimes.com/news/international/us/the-worlds-greatest-mystery-who-is-satoshi-nakamoto-and-how-rich-is-bitcoins-elusive-creator/articleshow/122381331.cms
+4.  80000 BTC Moved After 14 Years: Mystery Transfer or Massive Hack? - TradingView, erişim tarihi Temmuz 12, 2025, https://www.tradingview.com/news/coinpedia:21d711485094b:0-80-000-btc-moved-after-14-years-mystery-transfer-or-massive-hack/
+5.  Bitcoin starts week near record high as 80K BTC moves after 14 ..., erişim tarihi Temmuz 12, 2025, https://blockworks.co/news/satoshi-era-wallets-transfer-btc
+6.  Mysterious $8 Billion Bitcoin Move: Quantum Theft, Legal Seizure, or Hoax? - YouTube, erişim tarihi Temmuz 12, 2025, https://www.youtube.com/watch?v=9UvrxvXz17w
+7.  80,000 BTC Moved: A Turning Point in Bitcoin History, erişim tarihi Temmuz 12, 2025, https://www.cyphertux.net/articles/en/research/bitcoin-80k-btc-mystere-opreturn
+8.  Largest-ever transaction of $8.6B of Satoshi-era bitcoins, held in custody for more than 14 years and bought at rock-bottom prices - AS USA, erişim tarihi Temmuz 12, 2025, https://en.as.com/latest_news/largest-ever-transaction-of-86b-of-satoshi-era-bitcoins-held-in-custody-for-more-than-14-years-and-bought-at-rock-bottom-prices-n/
+9.  Address | Bitcoin Design, erişim tarihi Temmuz 12, 2025, https://bitcoin.design/guide/glossary/address/
+10. Types of bitcoin addresses: which one to choose in 2025? Legacy, SegWit, Taproot | by AML Crypto | Medium, erişim tarihi Temmuz 12, 2025, https://medium.com/@AMLCrypto/types-of-bitcoin-addresses-which-one-to-choose-in-2025-legacy-segwit-taproot-0138af5610ec
+11. Bitcoin Taproot vs Native SegWit: Which Is Better for You? - Komodo Platform, erişim tarihi Temmuz 12, 2025, https://komodoplatform.com/en/academy/bitcoin-native-segwit-vs-taproot/
+12. Best Crypto to Buy Now as $8.6B Bitcoin Whale Awakens After 14 Years - Cryptodnes.bg, erişim tarihi Temmuz 12, 2025, https://cryptodnes.bg/en/best-crypto-to-buy-now-as-8-6b-bitcoin-whale-awakens-after-14-years/
+13. 80 000 Bitcoins réveillés : Enquête sur un mystère à 8,6 Milliards de ..., erişim tarihi Temmuz 12, 2025, https://journalducoin.com/bitcoin/80-000-bitcoins-reveilles-enquete-mystere-86-milliards-dollars/
+14. 80 000 BTC Mysterium: Rechtliche Ansprüche werfen Fragen auf, erişim tarihi Temmuz 12, 2025, https://www.bitget.com/de/news/detail/12560604858266
+15. New Bitcoin Scam Unfolds: Old Wallets, Fake Lawyers - Mitrade, erişim tarihi Temmuz 12, 2025, https://www.mitrade.com/insights/news/live-news/article-3-943804-20250709
+16. 8 Largest Lost Bitcoin Wallets Ever - Webopedia, erişim tarihi Temmuz 12, 2025, https://www.webopedia.com/crypto/learn/largest-ost-bitcoin-wallets/
+17. Bitcoin Dust: Overview, Disadvantages, and Example - Investopedia, erişim tarihi Temmuz 12, 2025, https://www.investopedia.com/terms/b/bitcoin-dust.asp
+18. Societe Nationale D'Exploitation v. Salomon Bros., 928 F. Supp. 398 (S.D.N.Y. 1996), erişim tarihi Temmuz 12, 2025, https://law.justia.com/cases/federal/district-courts/FSupp/928/398/1446819/
+19. Transaction | Whale Alert, erişim tarihi Temmuz 12, 2025, https://whale-alert.io/transaction/bitcoin/9d5d67169a37222720b407c99939f7baa40587eef9ab16ec3a17c7c856ef9045
+20. Transaction | Whale Alert, erişim tarihi Temmuz 12, 2025, https://whale-alert.io/transaction/bitcoin/6ba8cefee9a922de94d9faa4f65128967ba2b166d0e85eee8a4ace1d045a3b42
+21. Address: 1KbrSKrT3GeEruTuuYYUSQ35JwKbrAWJYm - mempool - Bitcoin Explorer, erişim tarihi Temmuz 12, 2025, https://mempool.space/address/1KbrSKrT3GeEruTuuYYUSQ35JwKbrAWJYm
+22. Transaction | Whale Alert, erişim tarihi Temmuz 12, 2025, https://whale-alert.io/transaction/bitcoin/702c8af9e767cbdfb47d4dca3a875f8a890f476f0105e41d582ea3fa904997aa
+23. Transaction | Whale Alert, erişim tarihi Temmuz 12, 2025, https://whale-alert.io/transaction/bitcoin/138e8e608fc406baea409e2e52e0edad77104d9b282da4eb6c515386398d45fe
+24. Did Quantum Fears Prompt a Bitcoin Whale to Make an $8 Billion Move?, erişim tarihi Temmuz 12, 2025, https://thequantuminsider.com/2025/07/08/did-quantum-fears-prompt-a-bitcoin-whale-to-make-an-8-billion-move/
+25. Someone is moving $8B worth of BTC or I don't understand anything? : r/CryptoCurrency, erişim tarihi Temmuz 12, 2025, https://www.reddit.com/r/CryptoCurrency/comments/1lrl70b/someone_is_moving_8b_worth_of_btc_or_i_dont/
+26. ECDSA Nonces, Lattice, RNG et Patterns : Decrypting a Bitcoin Exploit - CypherTux OS, erişim tarihi Temmuz 12, 2025, https://www.cyphertux.net/articles/en/research/ecdsa-nonces-lattice-attacks-bitcoin-exploit
+27. Signature redacte - DSpace@MIT, erişim tarihi Temmuz 12, 2025, https://dspace.mit.edu/bitstream/handle/1721.1/121793/1103445166-MIT.pdf?sequence=1&isAllowed=y
+28. Eintragen, Ändern und Schützen der Blockchain-Datenstruktur - haraldpoettinger.com, erişim tarihi Temmuz 12, 2025, https://haraldpoettinger.com/blockchain-datenstruktur-eintrag/
+29. If craig wright is satoshi, what's his excuse to not move some btcs from satoshi's wallet? : r/Bitcoin - Reddit, erişim tarihi Temmuz 12, 2025, https://www.reddit.com/r/Bitcoin/comments/1al1vng/if_craig_wright_is_satoshi_whats_his_excuse_to/
+30. Echo Chamber: Craig Wright Takes Twitter Account Private to Avoid Dissidents - CCN.com, erişim tarihi Temmuz 12, 2025, https://www.ccn.com/echo-chamber-craig-wright-takes-twitter-account-private-to-avoid-dissidents/
+31. delays on FX reforms - European University Institute, erişim tarihi Temmuz 12, 2025, https://www.eui.eu/Documents/Business-Day-20230713.pdf
+32. Can the IRS Track Cryptocurrency? Do Exchanges Report? [2025] - Blockpit, erişim tarihi Temmuz 12, 2025, https://www.blockpit.io/en-us/tax-guides/can-the-irs-track-cryptocurrency
+33. Can the IRS Track Your Cryptocurrency? - Federal Lawyer, erişim tarihi Temmuz 12, 2025, https://federal-lawyer.com/blockchain/irs-track-cryptocurrency/
+34. Can the IRS Track Cryptocurrency? (2025 Update) - CoinLedger, erişim tarihi Temmuz 12, 2025, https://coinledger.io/blog/can-the-irs-track-cryptocurrency
+35. Quantum computers and the Bitcoin blockchain - Deloitte, erişim tarihi Temmuz 12, 2025, https://www.deloitte.com/nl/en/services/risk-advisory/perspectives/quantum-computers-and-the-bitcoin-blockchain.html
+36. Whats the difference between Satoshi's keys / BTC to newer ones : r/Bitcoin - Reddit, erişim tarihi Temmuz 12, 2025, https://www.reddit.com/r/Bitcoin/comments/1lwfn10/whats_the_difference_between_satoshis_keys_btc_to/
+37. How Bitcoin Addresses Work: Taproot, SegWit, Legacy | Tangem Blog, erişim tarihi Temmuz 12, 2025, https://tangem.com/en/blog/post/bitcoin-address/
