@@ -24,12 +24,6 @@
     <meta property="twitter:image" content="https://baro007.github.io/bitcoinmanifest/assets/images/og-image.jpg">
     <meta property="twitter:creator" content="@SadikBarisAdiguzel">
     
-    <!-- Hreflang tags -->
-    <link rel="alternate" hreflang="tr" href="https://baro007.github.io/bitcoinmanifest/tr/">
-    <link rel="alternate" hreflang="en" href="https://baro007.github.io/bitcoinmanifest/en/">
-    <link rel="alternate" hreflang="fr" href="https://baro007.github.io/bitcoinmanifest/fr/">
-    <link rel="alternate" hreflang="x-default" href="https://baro007.github.io/bitcoinmanifest/">
-    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     
@@ -71,7 +65,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <img src="assets/images/bitcoin-logo.svg" alt="Bitcoin" class="nav-logo">
+                <img src="../assets/images/bitcoin-logo.svg" alt="Bitcoin" class="nav-logo">
                 <span class="nav-title">Bitcoin Manifesto</span>
             </div>
             <ul class="nav-menu">
@@ -88,15 +82,15 @@
                     <span class="lang-arrow">▼</span>
                 </div>
                 <div class="language-dropdown">
-                    <a href="tr/index.html" class="lang-option" data-lang="tr">
+                    <a href="../tr/index.html" class="lang-option" data-lang="tr">
                         <span class="lang-flag">🇹🇷</span>
                         <span class="lang-text">Türkçe</span>
                     </a>
-                    <a href="en/index.html" class="lang-option" data-lang="en">
+                    <a href="../en/index.html" class="lang-option" data-lang="en">
                         <span class="lang-flag">🇺🇸</span>
                         <span class="lang-text">English</span>
                     </a>
-                    <a href="fr/index.html" class="lang-option" data-lang="fr">
+                    <a href="../fr/index.html" class="lang-option" data-lang="fr">
                         <span class="lang-flag">🇫🇷</span>
                         <span class="lang-text">Français</span>
                     </a>
@@ -284,54 +278,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="assets/js/main.js"></script>
-    
-    <!-- Language Detection Script -->
-    <script>
-        // Detect browser language and redirect to appropriate version
-        function detectAndRedirectLanguage() {
-            const userLang = navigator.language || navigator.userLanguage;
-            const langCode = userLang.substring(0, 2);
-            
-            // Check if user has already visited and has a preference
-            const savedLang = localStorage.getItem('preferredLanguage');
-            
-            if (savedLang) {
-                // User has a saved preference, use that
-                if (savedLang !== 'tr' && window.location.pathname === '/') {
-                    window.location.href = savedLang + '/index.html';
-                }
-                return;
-            }
-            
-            // Auto-detect based on browser language
-            switch (langCode) {
-                case 'en':
-                    window.location.href = 'en/index.html';
-                    break;
-                case 'fr':
-                    window.location.href = 'fr/index.html';
-                    break;
-                case 'tr':
-                default:
-                    // Default to Turkish or stay on current page
-                    break;
-            }
-        }
-        
-        // Save language preference when user selects a language
-        document.querySelectorAll('.lang-option').forEach(option => {
-            option.addEventListener('click', function() {
-                const lang = this.getAttribute('data-lang');
-                localStorage.setItem('preferredLanguage', lang);
-            });
-        });
-        
-        // Run language detection on page load
-        // Only redirect if we're on the root page
-        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-            detectAndRedirectLanguage();
-        }
-    </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html> 

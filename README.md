@@ -125,12 +125,26 @@ Site tüm cihazlarda mükemmel görünüm sağlar:
 - 💻 **Desktop**: 1024px+
 - 🖥️ **Large screens**: 1440px+
 
+## 🌐 Çoklu Dil Desteği
+
+Site **3 dilde** mevcuttur:
+
+- **🇹🇷 Türkçe** - [tr/index.html](tr/index.html) (Ana dil)
+- **🇺🇸 English** - [en/index.html](en/index.html) 
+- **🇫🇷 Français** - [fr/index.html](fr/index.html)
+
+### Dil Özellikleri
+- **Otomatik dil algılama** - Tarayıcı diline göre yönlendirme
+- **Dil seçici** - Üst menüde dil değiştirme
+- **SEO optimizasyonu** - Her dil için hreflang tagları
+- **Yerel depolama** - Kullanıcı dil tercihi hatırlanır
+
 ## 🔧 Teknolojiler
 
 ### Frontend
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling, Grid, Flexbox
-- **JavaScript ES6+** - Interactive features
+- **JavaScript ES6+** - Interactive features, language detection
 - **Google Fonts** - Typography (Inter, Space Mono)
 
 ### GitHub Pages
@@ -141,6 +155,7 @@ Site tüm cihazlarda mükemmel görünüm sağlar:
 ### SEO & Analytics
 - **Open Graph** - Social media sharing
 - **JSON-LD** - Structured data
+- **Hreflang tags** - Multi-language SEO
 - **Sitemap** - Search engine indexing
 - **Meta tags** - SEO optimization
 
@@ -178,8 +193,17 @@ Bu projeye katkıda bulunmak isterseniz:
 - İçerik geliştirme ve düzeltmeler
 - Tasarım iyileştirmeleri
 - Yeni analiz bölümleri
-- Çeviri (İngilizce, vb.)
+- **Çeviri geliştirme** (İngilizce, Fransızca iyileştirmeleri)
+- **Yeni dil desteği** (Almanca, İspanyolca, vb.)
 - Teknik optimizasyonlar
+
+### 🌐 Çeviri Katkısı
+Yeni dil eklemek için:
+1. `mkdir yeni-dil-kodu` (örn: `mkdir de` Almanca için)
+2. `mkdir yeni-dil-kodu/pages`
+3. Mevcut sayfaları kopyalayın ve çevirin
+4. Dil seçiciye yeni dili ekleyin
+5. Hreflang taglarını güncelleyin
 
 ## 📄 Lisans
 
@@ -190,8 +214,15 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 ## 🔗 Bağlantılar
 
 - **🌐 Live Site**: [https://baro007.github.io/bitcoinmanifest/](https://baro007.github.io/bitcoinmanifest/)
+  - **🇹🇷 Türkçe**: [https://baro007.github.io/bitcoinmanifest/tr/](https://baro007.github.io/bitcoinmanifest/tr/)
+  - **🇺🇸 English**: [https://baro007.github.io/bitcoinmanifest/en/](https://baro007.github.io/bitcoinmanifest/en/)
+  - **🇫🇷 Français**: [https://baro007.github.io/bitcoinmanifest/fr/](https://baro007.github.io/bitcoinmanifest/fr/)
 - **👨‍💻 Yazar**: [Sadık Barış Adıgüzel](https://github.com/Baro007)
 - **📧 GitHub**: [bitcoinmanifest](https://github.com/Baro007/bitcoinmanifest)
+
+## 🙏 Özel Teşekkür
+
+Bu araştırmayı yapmamda, konuya dikkat çeken tüm yazar ve araştırmacılara teşekkürlerimi iletmekle beraber **[@Cyphertux](https://x.com/Cyphertux)** ([cyphertux.net](https://www.cyphertux.net/)) 'a özel teşekkür ederim.
 
 ## ⚠️ Yasal Uyarı
 

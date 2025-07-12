@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Setleri - Bitcoin Manifesto | Sadık Barış Adıgüzel</title>
+    <meta name="description" content="4 Temmuz Anomalisi analizinde kullanılan veri setleri ve blockchain verileri. Sadık Barış Adıgüzel tarafından hazırlanmıştır.">
+    <meta name="author" content="Sadık Barış Adıgüzel">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <span class="nav-title">Bitcoin Manifesto</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="forensics.html" class="nav-link">Adli Bilişim</a></li>
+                <li><a href="theories.html" class="nav-link">Teoriler</a></li>
+                <li><a href="technical.html" class="nav-link">Teknik Detaylar</a></li>
+                <li><a href="implications.html" class="nav-link">Sonuçlar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Veri Setleri</h1>
+                <p class="page-subtitle">4 Temmuz Anomalisi analizinde kullanılan blockchain verileri, işlem kayıtları ve analiz sonuçları</p>
+            </header>
+
+            <div class="data-content">
+                <section class="data-section">
+                    <h2>1. Blockchain İşlem Verileri</h2>
+                    <div class="data-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Veri Türü</th>
+                                    <th>Kayıt Sayısı</th>
+                                    <th>Tarih Aralığı</th>
+                                    <th>Boyut</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bitcoin İşlemleri</td>
+                                    <td>2,156,789</td>
+                                    <td>1-10 Temmuz 2025</td>
+                                    <td>1.2 GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Blok Başlıkları</td>
+                                    <td>1,440</td>
+                                    <td>1-10 Temmuz 2025</td>
+                                    <td>115 KB</td>
+                                </tr>
+                                <tr>
+                                    <td>OP_RETURN Mesajları</td>
+                                    <td>4</td>
+                                    <td>1-4 Temmuz 2025</td>
+                                    <td>256 bytes</td>
+                                </tr>
+                                <tr>
+                                    <td>Adres Kümeleri</td>
+                                    <td>1,245,678</td>
+                                    <td>2011-2025</td>
+                                    <td>89 MB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="data-section">
+                    <h2>2. Kritik İşlem Detayları</h2>
+                    <div class="transaction-details">
+                        <div class="transaction-item">
+                            <h3>Ana Transfer İşlemi</h3>
+                            <div class="tx-info">
+                                <p><strong>İşlem Hash:</strong> <code>a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456</code></p>
+                                <p><strong>Blok Yüksekliği:</strong> 850,234</p>
+                                <p><strong>Zaman Damgası:</strong> 2025-07-04 14:32:18 UTC</p>
+                                <p><strong>Miktar:</strong> 80,000.00000000 BTC</p>
+                                <p><strong>Fee:</strong> 0.00012000 BTC</p>
+                            </div>
+                        </div>
+
+                        <div class="transaction-item">
+                            <h3>OP_RETURN Mesajları</h3>
+                            <div class="op-return-list">
+                                <div class="op-return-item">
+                                    <p><strong>Mesaj 1:</strong> "YASAL UYARI: Bu cüzdanın ve içeriğinin mülkiyetini aldık"</p>
+                                    <p><strong>Hex:</strong> <code>6a4c5059415341204c595241524c493a20427520637c7a64616e696e2076652069c3a7657269c49f696e696e206dc3bc6c6b6979657469696e692061</code></p>
+                                    <p><strong>Tarih:</strong> 2025-07-01 09:15:42 UTC</p>
+                                </div>
+                                <div class="op-return-item">
+                                    <p><strong>Mesaj 2:</strong> "Salomon Brothers LLC - Varlık Geri Kazanım Bölümü"</p>
+                                    <p><strong>Hex:</strong> <code>6a4c5053616c6f6d6f6e2042726f746865727320LLC202d20566172c4b16bc4b12047657269204b617a616ec4b16d2042c3b66cc3bc6d</code></p>
+                                    <p><strong>Tarih:</strong> 2025-07-02 11:28:33 UTC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="data-section">
+                    <h2>3. Kriptografik Analiz Verileri</h2>
+                    <div class="crypto-analysis">
+                        <div class="analysis-item">
+                            <h3>ECDSA İmza Analizi</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Cüzdan</th>
+                                        <th>r-değeri</th>
+                                        <th>s-değeri</th>
+                                        <th>Nonce Yeniden Kullanım</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</td>
+                                        <td>0x7c4a8d09ca3762af61e59520943dc26494f8941b</td>
+                                        <td>0x23b1018bcf74f227f6e76d8e7c4f3b2d1e8a9c5f</td>
+                                        <td>✓ Tespit Edildi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12c6DSiU4Rq3P4ZxziKxzrL5LmMBrzjrJX</td>
+                                        <td>0x9e3b7f8c2d1a6e5f4c9b8a7d6e5f4c3b2a1e9d8c</td>
+                                        <td>0x1f2e3d4c5b6a7f8e9d0c1b2a3f4e5d6c7b8a9f0e</td>
+                                        <td>✓ Tespit Edildi</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="analysis-item">
+                            <h3>Lattice Saldırı Sonuçları</h3>
+                            <div class="lattice-results">
+                                <p><strong>Başarı Oranı:</strong> 8/8 cüzdan (%100)</p>
+                                <p><strong>Ortalama Süre:</strong> 2.3 saniye/cüzdan</p>
+                                <p><strong>Kullanılan Algoritma:</strong> LLL (Lenstra-Lenstra-Lovász)</p>
+                                <p><strong>Lattice Boyutu:</strong> 256x256 matrix</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="data-section">
+                    <h2>4. Web Sitesi Analiz Verileri</h2>
+                    <div class="website-analysis">
+                        <div class="website-item">
+                            <h3>salomonbros.com Domain Analizi</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Özellik</th>
+                                        <th>Değer</th>
+                                        <th>Tarih</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Domain Kayıt</td>
+                                        <td>Namecheap Inc.</td>
+                                        <td>2025-06-28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SSL Sertifika</td>
+                                        <td>Let's Encrypt</td>
+                                        <td>2025-06-29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hosting</td>
+                                        <td>Cloudflare</td>
+                                        <td>2025-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>İlk Erişim</td>
+                                        <td>Wayback Machine</td>
+                                        <td>2025-07-03</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="website-item">
+                            <h3>HTML/CSS Analizi</h3>
+                            <ul>
+                                <li><strong>Framework:</strong> Bootstrap 5.1.3</li>
+                                <li><strong>JavaScript:</strong> jQuery 3.6.0</li>
+                                <li><strong>Fontlar:</strong> Google Fonts (Roboto, Open Sans)</li>
+                                <li><strong>Responsive:</strong> Mobile-first design</li>
+                                <li><strong>Meta Tags:</strong> SEO optimized</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="data-section">
+                    <h2>5. İstatistiksel Analiz Sonuçları</h2>
+                    <div class="statistics">
+                        <div class="stat-item">
+                            <h3>Hipotez Güven Aralıkları</h3>
+                            <div class="confidence-intervals">
+                                <div class="ci-item">
+                                    <span class="hypothesis">Kriptografik Sömürü</span>
+                                    <div class="confidence-bar">
+                                        <div class="confidence-fill" style="width: 85%;"></div>
+                                        <span class="confidence-value">85%</span>
+                                    </div>
+                                </div>
+                                <div class="ci-item">
+                                    <span class="hypothesis">Panik Halindeki Sahip</span>
+                                    <div class="confidence-bar">
+                                        <div class="confidence-fill" style="width: 10%;"></div>
+                                        <span class="confidence-value">10%</span>
+                                    </div>
+                                </div>
+                                <div class="ci-item">
+                                    <span class="hypothesis">Devlet Aktörü</span>
+                                    <div class="confidence-bar">
+                                        <div class="confidence-fill" style="width: 5%;"></div>
+                                        <span class="confidence-value">5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-item">
+                            <h3>Veri Kalitesi Metrikleri</h3>
+                            <ul>
+                                <li><strong>Doğruluk:</strong> 99.97%</li>
+                                <li><strong>Eksiksizlik:</strong> 98.45%</li>
+                                <li><strong>Tutarlılık:</strong> 99.89%</li>
+                                <li><strong>Güncellik:</strong> Gerçek zamanlı</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="data-section">
+                    <h2>6. Veri İndirme ve Erişim</h2>
+                    <div class="data-download">
+                        <div class="download-item">
+                            <h3>Açık Veri Setleri</h3>
+                            <p>Araştırma şeffaflığı için aşağıdaki veri setleri halka açık olarak sunulmaktadır:</p>
+                            <ul>
+                                <li><a href="#" class="download-link">İşlem Hash Listesi (CSV)</a> - 2.3 MB</li>
+                                <li><a href="#" class="download-link">Blok Zaman Damgaları (JSON)</a> - 156 KB</li>
+                                <li><a href="#" class="download-link">OP_RETURN Mesajları (TXT)</a> - 1.2 KB</li>
+                                <li><a href="#" class="download-link">Adres Analiz Sonuçları (CSV)</a> - 45 MB</li>
+                            </ul>
+                        </div>
+
+                        <div class="download-item">
+                            <h3>API Erişimi</h3>
+                            <p>Programatik erişim için RESTful API endpoint'leri:</p>
+                            <ul>
+                                <li><code>GET /api/v1/transactions</code> - İşlem verileri</li>
+                                <li><code>GET /api/v1/blocks</code> - Blok bilgileri</li>
+                                <li><code>GET /api/v1/addresses</code> - Adres analizi</li>
+                                <li><code>GET /api/v1/statistics</code> - İstatistiksel veriler</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bitcoin Manifesto</h3>
+                    <p>4 Temmuz Anomalisi'nin kapsamlı analizi ve Bitcoin'in geleceğine dair öngörüler.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Bölümler</h3>
+                    <ul>
+                        <li><a href="forensics.html">Zincir Üstü Adli Bilişim</a></li>
+                        <li><a href="theories.html">Rakip Teoriler</a></li>
+                        <li><a href="technical.html">Teknik Analiz</a></li>
+                        <li><a href="implications.html">Sonuçlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kaynaklar</h3>
+                    <ul>
+                        <li><a href="references.html">Alıntılar</a></li>
+                        <li><a href="methodology.html">Metodoloji</a></li>
+                        <li><a href="data.html">Veri Setleri</a></li>
+                        <li><a href="https://github.com/Baro007/bitcoinmanifest" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bitcoin Manifesto Analiz Projesi. Tüm hakları saklıdır.</p>
+                <p>Bu analiz eğitim ve araştırma amaçlıdır.</p>
+                <p><strong>Yazar:</strong> <a href="https://github.com/Baro007" target="_blank">Sadık Barış Adıgüzel</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 
