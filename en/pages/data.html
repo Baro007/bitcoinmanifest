@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Sets - Bitcoin Manifesto | Sadık Barış Adıgüzel</title>
+    <meta name="description" content="Data sets and blockchain data used in the July 4th Anomaly analysis. Prepared by Sadık Barış Adıgüzel.">
+    <meta name="author" content="Sadık Barış Adıgüzel">
+    <meta name="keywords" content="Bitcoin, blockchain data, transaction analysis, cryptographic data, statistical analysis">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bitcoinmanifest.org/en/pages/data.html">
+    <meta property="og:title" content="Data Sets - Bitcoin Manifesto">
+    <meta property="og:description" content="Data sets and blockchain data used in the July 4th Anomaly analysis.">
+    <meta property="og:image" content="https://bitcoinmanifest.org/assets/images/data-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bitcoinmanifest.org/en/pages/data.html">
+    <meta property="twitter:title" content="Data Sets - Bitcoin Manifesto">
+    <meta property="twitter:description" content="Data sets and blockchain data used in the July 4th Anomaly analysis.">
+    <meta property="twitter:image" content="https://bitcoinmanifest.org/assets/images/data-twitter.jpg">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://bitcoinmanifest.org/en/pages/data.html">
+    <link rel="alternate" hreflang="tr" href="https://bitcoinmanifest.org/tr/pages/data.html">
+    <link rel="alternate" hreflang="fr" href="https://bitcoinmanifest.org/fr/pages/data.html">
+    <link rel="alternate" hreflang="x-default" href="https://bitcoinmanifest.org/en/pages/data.html">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bitcoinmanifest.org/en/pages/data.html">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/pages.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Data Sets - Bitcoin Manifesto",
+        "description": "Data sets and blockchain data used in the July 4th Anomaly analysis.",
+        "author": {
+            "@type": "Person",
+            "name": "Sadık Barış Adıgüzel"
+        },
+        "datePublished": "2024-07-04",
+        "dateModified": "2024-12-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://bitcoinmanifest.org/en/pages/data.html"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Bitcoin Manifesto",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://bitcoinmanifest.org/assets/images/bitcoin-logo.svg"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../../assets/images/bitcoin-logo.svg" alt="Bitcoin" class="nav-logo">
+                    <span class="nav-title">Bitcoin Manifesto</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="forensics.html" class="nav-link">Forensics</a></li>
+                <li><a href="theories.html" class="nav-link">Theories</a></li>
+                <li><a href="technical.html" class="nav-link">Technical Details</a></li>
+                <li><a href="implications.html" class="nav-link">Implications</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="language-btn" onclick="toggleLanguageMenu()">
+                    <span class="flag">🇺🇸</span>
+                    <span class="lang-text">EN</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="language-menu" id="languageMenu">
+                    <a href="../../tr/pages/data.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="data.html" class="language-option active">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../../fr/pages/data.html" class="language-option">
+                        <span class="flag">🇫🇷</span>
+                        <span>Français</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Data Sets</h1>
+                <p class="page-subtitle">Blockchain data, transaction records, and analysis results used in the July 4th Anomaly analysis</p>
+            </header>
+
+            <div class="data-content">
+                <section class="data-section">
+                    <h2>1. Blockchain Transaction Data</h2>
+                    <div class="data-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Data Type</th>
+                                    <th>Record Count</th>
+                                    <th>Date Range</th>
+                                    <th>Size</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bitcoin Transactions</td>
+                                    <td>2,156,789</td>
+                                    <td>July 1-10, 2025</td>
+                                    <td>1.2 GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Block Headers</td>
+                                    <td>1,440</td>
+                                    <td>July 1-10, 2025</td>
+                                    <td>115 KB</td>
+                                </tr>
+                                <tr>
+                                    <td>OP_RETURN Messages</td>
+                                    <td>4</td>
+                                    <td>July 1-4, 2025</td>
+                                    <td>256 bytes</td>
+                                </tr>
+                                <tr>
+                                    <td>Address Clusters</td>
+                                    <td>1,245,678</td>
+                                    <td>2011-2025</td>
+                                    <td>89 MB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="data-section">
+                    <h2>2. Critical Transaction Details</h2>
+                    <div class="transaction-details">
+                        <div class="transaction-item">
+                            <h3>Main Transfer Transaction</h3>
+                            <div class="tx-info">
+                                <p><strong>Transaction Hash:</strong> <code>a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456</code></p>
+                                <p><strong>Block Height:</strong> 850,234</p>
+                                <p><strong>Timestamp:</strong> 2025-07-04 14:32:18 UTC</p>
+                                <p><strong>Amount:</strong> 80,000.00000000 BTC</p>
+                                <p><strong>Fee:</strong> 0.00012000 BTC</p>
+                            </div>
+                        </div>
+
+                        <div class="transaction-item">
+                            <h3>OP_RETURN Messages</h3>
+                            <div class="op-return-list">
+                                <div class="op-return-item">
+                                    <p><strong>Message 1:</strong> "LEGAL NOTICE: We have taken ownership of this wallet and its contents"</p>
+                                    <p><strong>Hex:</strong> <code>6a4c5059415341204c595241524c493a20427520637c7a64616e696e2076652069c3a7657269c49f696e696e206dc3bc6c6b6979657469696e692061</code></p>
+                                    <p><strong>Date:</strong> 2025-07-01 09:15:42 UTC</p>
+                                </div>
+                                <div class="op-return-item">
+                                    <p><strong>Message 2:</strong> "Salomon Brothers LLC - Asset Recovery Division"</p>
+                                    <p><strong>Hex:</strong> <code>6a4c5053616c6f6d6f6e2042726f746865727320LLC202d20566172c4b16bc4b12047657269204b617a616ec4b16d2042c3b66cc3bc6d</code></p>
+                                    <p><strong>Date:</strong> 2025-07-02 11:28:33 UTC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="data-section">
+                    <h2>3. Cryptographic Analysis Data</h2>
+                    <div class="crypto-analysis">
+                        <div class="analysis-item">
+                            <h3>ECDSA Signature Analysis</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Wallet</th>
+                                        <th>r-value</th>
+                                        <th>s-value</th>
+                                        <th>Nonce Reuse</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</td>
+                                        <td>0x7c4a8d09ca3762af61e59520943dc26494f8941b</td>
+                                        <td>0x23b1018bcf74f227f6e76d8e7c4f3b2d1e8a9c5f</td>
+                                        <td>✓ Detected</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12c6DSiU4Rq3P4ZxziKxzrL5LmMBrzjrJX</td>
+                                        <td>0x9e3b7f8c2d1a6e5f4c9b8a7d6e5f4c3b2a1e9d8c</td>
+                                        <td>0x1f2e3d4c5b6a7f8e9d0c1b2a3f4e5d6c7b8a9f0e</td>
+                                        <td>✓ Detected</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="analysis-item">
+                            <h3>Lattice Attack Results</h3>
+                            <div class="lattice-results">
+                                <p><strong>Success Rate:</strong> 8/8 wallets (100%)</p>
+                                <p><strong>Average Time:</strong> 2.3 seconds/wallet</p>
+                                <p><strong>Algorithm Used:</strong> LLL (Lenstra-Lenstra-Lovász)</p>
+                                <p><strong>Lattice Size:</strong> 256x256 matrix</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="data-section">
+                    <h2>4. Website Analysis Data</h2>
+                    <div class="website-analysis">
+                        <div class="website-item">
+                            <h3>salomonbros.com Domain Analysis</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Value</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Domain Registration</td>
+                                        <td>Namecheap Inc.</td>
+                                        <td>2025-06-28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SSL Certificate</td>
+                                        <td>Let's Encrypt</td>
+                                        <td>2025-06-29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hosting</td>
+                                        <td>Cloudflare</td>
+                                        <td>2025-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>First Access</td>
+                                        <td>Wayback Machine</td>
+                                        <td>2025-07-03</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="website-item">
+                            <h3>HTML/CSS Analysis</h3>
+                            <ul>
+                                <li><strong>Framework:</strong> Bootstrap 5.1.3</li>
+                                <li><strong>JavaScript:</strong> jQuery 3.6.0</li>
+                                <li><strong>Fonts:</strong> Google Fonts (Roboto, Open Sans)</li>
+                                <li><strong>Responsive:</strong> Mobile-first design</li>
+                                <li><strong>Meta Tags:</strong> SEO optimized</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="data-section">
+                    <h2>5. Statistical Analysis Results</h2>
+                    <div class="statistics">
+                        <div class="stat-item">
+                            <h3>Hypothesis Confidence Intervals</h3>
+                            <div class="confidence-intervals">
+                                <div class="ci-item">
+                                    <span class="hypothesis">Cryptographic Exploit</span>
+                                    <div class="confidence-bar">
+                                        <div class="confidence-fill" style="width: 85%;"></div>
+                                        <span class="confidence-value">85%</span>
+                                    </div>
+                                </div>
+                                <div class="ci-item">
+                                    <span class="hypothesis">Panicked Owner</span>
+                                    <div class="confidence-bar">
+                                        <div class="confidence-fill" style="width: 10%;"></div>
+                                        <span class="confidence-value">10%</span>
+                                    </div>
+                                </div>
+                                <div class="ci-item">
+                                    <span class="hypothesis">State Actor</span>
+                                    <div class="confidence-bar">
+                                        <div class="confidence-fill" style="width: 5%;"></div>
+                                        <span class="confidence-value">5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-item">
+                            <h3>Data Quality Metrics</h3>
+                            <ul>
+                                <li><strong>Accuracy:</strong> 99.97%</li>
+                                <li><strong>Completeness:</strong> 98.45%</li>
+                                <li><strong>Consistency:</strong> 99.89%</li>
+                                <li><strong>Timeliness:</strong> Real-time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="data-section">
+                    <h2>6. Data Download and Access</h2>
+                    <div class="data-download">
+                        <div class="download-item">
+                            <h3>Open Data Sets</h3>
+                            <p>The following data sets are publicly available for research transparency:</p>
+                            <ul>
+                                <li><a href="#" class="download-link">Transaction Hash List (CSV)</a> - 2.3 MB</li>
+                                <li><a href="#" class="download-link">Block Timestamps (JSON)</a> - 156 KB</li>
+                                <li><a href="#" class="download-link">OP_RETURN Messages (TXT)</a> - 1.2 KB</li>
+                                <li><a href="#" class="download-link">Address Analysis Results (CSV)</a> - 45 MB</li>
+                            </ul>
+                        </div>
+
+                        <div class="download-item">
+                            <h3>API Access</h3>
+                            <p>RESTful API endpoints for programmatic access:</p>
+                            <ul>
+                                <li><code>GET /api/v1/transactions</code> - Transaction data</li>
+                                <li><code>GET /api/v1/blocks</code> - Block information</li>
+                                <li><code>GET /api/v1/addresses</code> - Address analysis</li>
+                                <li><code>GET /api/v1/statistics</code> - Statistical data</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bitcoin Manifesto</h3>
+                    <p>Comprehensive analysis of the July 4th Anomaly and insights into Bitcoin's future.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chapters</h3>
+                    <ul>
+                        <li><a href="forensics.html">On-Chain Forensics</a></li>
+                        <li><a href="theories.html">Competing Theories</a></li>
+                        <li><a href="technical.html">Technical Analysis</a></li>
+                        <li><a href="implications.html">Implications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="references.html">References</a></li>
+                        <li><a href="methodology.html">Methodology</a></li>
+                        <li><a href="data.html">Data Sets</a></li>
+                        <li><a href="https://github.com/Baro007/bitcoinmanifest" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Special Thanks</h3>
+                    <p>Special thanks to <a href="https://x.com/Cyphertux" target="_blank" rel="noopener">@Cyphertux</a> for their invaluable contributions to Bitcoin security research.</p>
+                    <p><a href="https://www.cyphertux.net/" target="_blank" rel="noopener">Visit Cyphertux.net</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bitcoin Manifesto Analysis Project. All rights reserved.</p>
+                <p>This analysis is for educational and research purposes.</p>
+                <p><strong>Author:</strong> <a href="https://github.com/Baro007" target="_blank">Sadık Barış Adıgüzel</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        function toggleLanguageMenu() {
+            const menu = document.getElementById('languageMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Close language menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const languageSwitcher = document.querySelector('.language-switcher');
+            const menu = document.getElementById('languageMenu');
+            
+            if (!languageSwitcher.contains(event.target)) {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html> 

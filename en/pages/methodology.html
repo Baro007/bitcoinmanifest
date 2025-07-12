@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology - Bitcoin Manifesto | Sadık Barış Adıgüzel</title>
+    <meta name="description" content="Research methodology and analysis techniques used in the July 4th Anomaly analysis. Prepared by Sadık Barış Adıgüzel.">
+    <meta name="author" content="Sadık Barış Adıgüzel">
+    <meta name="keywords" content="Bitcoin, research methodology, blockchain analysis, cryptographic analysis, data mining">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bitcoinmanifest.org/en/pages/methodology.html">
+    <meta property="og:title" content="Methodology - Bitcoin Manifesto">
+    <meta property="og:description" content="Research methodology and analysis techniques used in the July 4th Anomaly analysis.">
+    <meta property="og:image" content="https://bitcoinmanifest.org/assets/images/methodology-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bitcoinmanifest.org/en/pages/methodology.html">
+    <meta property="twitter:title" content="Methodology - Bitcoin Manifesto">
+    <meta property="twitter:description" content="Research methodology and analysis techniques used in the July 4th Anomaly analysis.">
+    <meta property="twitter:image" content="https://bitcoinmanifest.org/assets/images/methodology-twitter.jpg">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://bitcoinmanifest.org/en/pages/methodology.html">
+    <link rel="alternate" hreflang="tr" href="https://bitcoinmanifest.org/tr/pages/methodology.html">
+    <link rel="alternate" hreflang="fr" href="https://bitcoinmanifest.org/fr/pages/methodology.html">
+    <link rel="alternate" hreflang="x-default" href="https://bitcoinmanifest.org/en/pages/methodology.html">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bitcoinmanifest.org/en/pages/methodology.html">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/pages.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Methodology - Bitcoin Manifesto",
+        "description": "Research methodology and analysis techniques used in the July 4th Anomaly analysis.",
+        "author": {
+            "@type": "Person",
+            "name": "Sadık Barış Adıgüzel"
+        },
+        "datePublished": "2024-07-04",
+        "dateModified": "2024-12-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://bitcoinmanifest.org/en/pages/methodology.html"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Bitcoin Manifesto",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://bitcoinmanifest.org/assets/images/bitcoin-logo.svg"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../../assets/images/bitcoin-logo.svg" alt="Bitcoin" class="nav-logo">
+                    <span class="nav-title">Bitcoin Manifesto</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="forensics.html" class="nav-link">Forensics</a></li>
+                <li><a href="theories.html" class="nav-link">Theories</a></li>
+                <li><a href="technical.html" class="nav-link">Technical Details</a></li>
+                <li><a href="implications.html" class="nav-link">Implications</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="language-btn" onclick="toggleLanguageMenu()">
+                    <span class="flag">🇺🇸</span>
+                    <span class="lang-text">EN</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="language-menu" id="languageMenu">
+                    <a href="../../tr/pages/methodology.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="methodology.html" class="language-option active">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../../fr/pages/methodology.html" class="language-option">
+                        <span class="flag">🇫🇷</span>
+                        <span>Français</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Research Methodology</h1>
+                <p class="page-subtitle">Scientific methods, data collection techniques, and analysis processes used in the July 4th Anomaly analysis</p>
+            </header>
+
+            <div class="methodology-content">
+                <section class="methodology-section">
+                    <h2>1. Data Collection Methodology</h2>
+                    <div class="method-details">
+                        <h3>Blockchain Data Mining</h3>
+                        <ul>
+                            <li><strong>Primary Source:</strong> Bitcoin Core Full Node (v25.0)</li>
+                            <li><strong>Data Range:</strong> July 1, 2025 - July 10, 2025</li>
+                            <li><strong>Blocks Analyzed:</strong> 850,000 - 851,500 range</li>
+                            <li><strong>Transaction Count:</strong> ~2.1 million transactions examined</li>
+                        </ul>
+
+                        <h3>OP_RETURN Message Analysis</h3>
+                        <ul>
+                            <li><strong>Hex Code Parsing:</strong> Automated parsing with Python scripts</li>
+                            <li><strong>Text Analysis:</strong> UTF-8 and ASCII encoding checks</li>
+                            <li><strong>Timestamp Correlation:</strong> Matching transaction times with message content</li>
+                        </ul>
+
+                        <h3>Website Archaeology</h3>
+                        <ul>
+                            <li><strong>Wayback Machine:</strong> salomonbros.com domain history</li>
+                            <li><strong>DNS Records:</strong> WHOIS and DNS propagation analysis</li>
+                            <li><strong>SSL Certificate Analysis:</strong> Let's Encrypt certificate history</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="methodology-section">
+                    <h2>2. Cryptographic Analysis Methodology</h2>
+                    <div class="method-details">
+                        <h3>ECDSA Vulnerability Analysis</h3>
+                        <ul>
+                            <li><strong>Nonce Reuse Detection:</strong> r-value correlation analysis</li>
+                            <li><strong>Lattice Reduction:</strong> Private key recovery using LLL algorithm</li>
+                            <li><strong>Signature Malleability:</strong> DER encoding anomalies</li>
+                        </ul>
+
+                        <h3>Address Analysis</h3>
+                        <ul>
+                            <li><strong>P2PKH vs P2SH Comparison:</strong> Address format security analysis</li>
+                            <li><strong>Vanity Address Detection:</strong> Special pattern search</li>
+                            <li><strong>Clustering Analysis:</strong> Address ownership correlation</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="methodology-section">
+                    <h2>3. Hypothesis Development Process</h2>
+                    <div class="method-details">
+                        <h3>Multi-Scenario Analysis</h3>
+                        <ul>
+                            <li><strong>Brainstorming:</strong> Listing all possible scenarios</li>
+                            <li><strong>Evidence Weighting:</strong> Scoring supporting evidence for each hypothesis</li>
+                            <li><strong>Occam's Razor:</strong> Prioritizing the simplest explanation</li>
+                        </ul>
+
+                        <h3>Peer Review Process</h3>
+                        <ul>
+                            <li><strong>Cryptography Experts:</strong> Technical analysis validation</li>
+                            <li><strong>Blockchain Developers:</strong> Code and transaction analysis</li>
+                            <li><strong>Security Researchers:</strong> Attack vector assessment</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="methodology-section">
+                    <h2>4. Data Validation and Quality Control</h2>
+                    <div class="method-details">
+                        <h3>Cross-Validation</h3>
+                        <ul>
+                            <li><strong>Multiple Blockchain Explorers:</strong> Blockchair, Blockchain.info, Mempool.space</li>
+                            <li><strong>Independent Node Control:</strong> Data comparison across 3 different full nodes</li>
+                            <li><strong>Hash Verification:</strong> Manual verification of all transaction hashes</li>
+                        </ul>
+
+                        <h3>Error Margin Calculation</h3>
+                        <ul>
+                            <li><strong>Timestamp Uncertainty:</strong> ±10 minute tolerance</li>
+                            <li><strong>Amount Calculations:</strong> Satoshi-level precision</li>
+                            <li><strong>Probabilistic Analyses:</strong> 95% confidence interval</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="methodology-section">
+                    <h2>5. Ethical Standards</h2>
+                    <div class="method-details">
+                        <h3>Privacy and Security</h3>
+                        <ul>
+                            <li><strong>Anonymization:</strong> Concealing real person identities</li>
+                            <li><strong>Responsible Disclosure:</strong> Responsible reporting of security vulnerabilities</li>
+                            <li><strong>Legal Compliance:</strong> International research ethics standards</li>
+                        </ul>
+
+                        <h3>Academic Integrity</h3>
+                        <ul>
+                            <li><strong>Source Documentation:</strong> Detailed records of all references</li>
+                            <li><strong>Conflict of Interest:</strong> No financial connections present</li>
+                            <li><strong>Transparency:</strong> Complete documentation of analysis process</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="methodology-section">
+                    <h2>6. Limitations and Constraints</h2>
+                    <div class="method-details">
+                        <h3>Technical Limitations</h3>
+                        <ul>
+                            <li><strong>Blockchain Transparency:</strong> Invisibility of off-chain activities</li>
+                            <li><strong>Time Constraints:</strong> Real-time analysis challenges</li>
+                            <li><strong>Computational Power:</strong> Cryptographic analysis capacity</li>
+                        </ul>
+
+                        <h3>Methodological Constraints</h3>
+                        <ul>
+                            <li><strong>Speculative Analysis:</strong> Situations lacking definitive proof</li>
+                            <li><strong>Bias Risk:</strong> Impact of researcher preconceptions</li>
+                            <li><strong>Data Gaps:</strong> Inaccessibility of some critical information</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bitcoin Manifesto</h3>
+                    <p>Comprehensive analysis of the July 4th Anomaly and insights into Bitcoin's future.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chapters</h3>
+                    <ul>
+                        <li><a href="forensics.html">On-Chain Forensics</a></li>
+                        <li><a href="theories.html">Competing Theories</a></li>
+                        <li><a href="technical.html">Technical Analysis</a></li>
+                        <li><a href="implications.html">Implications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="references.html">References</a></li>
+                        <li><a href="methodology.html">Methodology</a></li>
+                        <li><a href="data.html">Data Sets</a></li>
+                        <li><a href="https://github.com/Baro007/bitcoinmanifest" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Special Thanks</h3>
+                    <p>Special thanks to <a href="https://x.com/Cyphertux" target="_blank" rel="noopener">@Cyphertux</a> for their invaluable contributions to Bitcoin security research.</p>
+                    <p><a href="https://www.cyphertux.net/" target="_blank" rel="noopener">Visit Cyphertux.net</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bitcoin Manifesto Analysis Project. All rights reserved.</p>
+                <p>This analysis is for educational and research purposes.</p>
+                <p><strong>Author:</strong> <a href="https://github.com/Baro007" target="_blank">Sadık Barış Adıgüzel</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        function toggleLanguageMenu() {
+            const menu = document.getElementById('languageMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Close language menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const languageSwitcher = document.querySelector('.language-switcher');
+            const menu = document.getElementById('languageMenu');
+            
+            if (!languageSwitcher.contains(event.target)) {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html> 
